@@ -1,4 +1,0 @@
-srv/TTS.idl
-srv/TTS.srv
-srv/TTS_Request.msg
-srv/TTS_Response.msg

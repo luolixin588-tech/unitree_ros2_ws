@@ -1,7 +1,0 @@
-# CMake generated Testfile for 
-# Source directory: /home/luolixin/unitree_ros2_ws/src/unitree_ros2/cyclonedds_ws/src/unitree/unitree_hg
-# Build directory: /home/luolixin/unitree_ros2_ws/build/unitree_hg
-# 
-# This file includes the relevant testing commands required for 
-# testing this directory and lists subdirectories to be tested as well.
-subdirs("unitree_hg__py")

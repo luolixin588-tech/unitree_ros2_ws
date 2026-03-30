@@ -1,8 +1,0 @@
-/home/luolixin/unitree_ros2_ws/build/unitree_api/rosidl_adapter/unitree_api:msg/Request.idl
-/home/luolixin/unitree_ros2_ws/build/unitree_api/rosidl_adapter/unitree_api:msg/RequestHeader.idl
-/home/luolixin/unitree_ros2_ws/build/unitree_api/rosidl_adapter/unitree_api:msg/RequestIdentity.idl
-/home/luolixin/unitree_ros2_ws/build/unitree_api/rosidl_adapter/unitree_api:msg/RequestLease.idl
-/home/luolixin/unitree_ros2_ws/build/unitree_api/rosidl_adapter/unitree_api:msg/RequestPolicy.idl
-/home/luolixin/unitree_ros2_ws/build/unitree_api/rosidl_adapter/unitree_api:msg/Response.idl
-/home/luolixin/unitree_ros2_ws/build/unitree_api/rosidl_adapter/unitree_api:msg/ResponseHeader.idl
-/home/luolixin/unitree_ros2_ws/build/unitree_api/rosidl_adapter/unitree_api:msg/ResponseStatus.idl

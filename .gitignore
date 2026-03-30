@@ -1,0 +1,37 @@
+# ROS 2 / colcon build outputs
+/build/
+/install/
+/log/
+/.colcon/
+
+# CMake / compilation artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+Makefile
+
+# Python cache / virtual env
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Runtime / data artifacts
+*.log
+*.tmp
+*.bak
+*.db3
+*.mcap
+
+# Secrets
+.env
+.env.*

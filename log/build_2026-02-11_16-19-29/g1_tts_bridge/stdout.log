@@ -1,0 +1,15 @@
+[  3%] Built target g1_tts_bridge__cpp
+[ 12%] Built target g1_tts_bridge__rosidl_generator_c
+[ 27%] Built target g1_tts_bridge__rosidl_typesupport_fastrtps_cpp
+[ 30%] Built target g1_tts_bridge__rosidl_typesupport_introspection_cpp
+[ 39%] Built target g1_tts_bridge__rosidl_typesupport_cpp
+[ 48%] Built target g1_tts_bridge__rosidl_typesupport_introspection_c
+[ 57%] Built target g1_tts_bridge__rosidl_typesupport_c
+[ 66%] Built target g1_tts_bridge__rosidl_typesupport_fastrtps_c
+[ 66%] Built target g1_tts_bridge
+[ 69%] Built target g1_tts_bridge__py
+[ 72%] [32mBuilding CXX object CMakeFiles/g1_tts_service.dir/src/g1_tts_service.cpp.o[0m
+[ 78%] Built target g1_tts_bridge__python
+[ 84%] Built target g1_tts_bridge__rosidl_typesupport_introspection_c__pyext
+[ 90%] Built target g1_tts_bridge__rosidl_typesupport_fastrtps_c__pyext
+[ 96%] Built target g1_tts_bridge__rosidl_typesupport_c__pyext

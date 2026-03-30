@@ -1,0 +1,851 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "rosidl_generator_py/unitree_api/unitree_api_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so"
+		}
+	],
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"ament_execute_extensions",
+			"rosidl_generate_interfaces",
+			"install",
+			"target_link_libraries",
+			"rosidl_target_interfaces",
+			"ament_target_dependencies",
+			"set_target_properties",
+			"find_package",
+			"add_dependencies",
+			"set_properties",
+			"add_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"/opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake",
+			"/opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake",
+			"CMakeLists.txt",
+			"/opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake",
+			"/opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake",
+			"/opt/ros/foxy/share/geometry_msgs/cmake/geometry_msgs__rosidl_typesupport_introspection_cppExport.cmake",
+			"/opt/ros/foxy/share/geometry_msgs/cmake/ament_cmake_export_targets-extras.cmake",
+			"/opt/ros/foxy/share/geometry_msgs/cmake/geometry_msgsConfig.cmake",
+			"/opt/ros/foxy/share/geometry_msgs/cmake/geometry_msgs__rosidl_typesupport_cppExport.cmake",
+			"/opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cExport.cmake",
+			"/opt/ros/foxy/share/rosidl_typesupport_c/cmake/ament_cmake_export_targets-extras.cmake",
+			"/opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake",
+			"/opt/ros/foxy/share/rosidl_default_runtime/cmake/rosidl_default_runtime-extras.cmake",
+			"/opt/ros/foxy/share/rosidl_default_runtime/cmake/rosidl_default_runtimeConfig.cmake",
+			"/opt/ros/foxy/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/foxy/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake",
+			"/opt/ros/foxy/share/std_msgs/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/foxy/share/std_msgs/cmake/std_msgsConfig.cmake",
+			"/opt/ros/foxy/share/geometry_msgs/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/foxy/share/rcutils/cmake/rcutilsExport.cmake",
+			"/opt/ros/foxy/share/rcutils/cmake/ament_cmake_export_targets-extras.cmake",
+			"/opt/ros/foxy/share/rcutils/cmake/rcutilsConfig.cmake",
+			"/opt/ros/foxy/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/foxy/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake",
+			"/opt/ros/foxy/share/rosidl_typesupport_introspection_c/cmake/rosidl_typesupport_introspection_c_generate_interfaces.cmake",
+			"/opt/ros/foxy/share/ament_cmake_ros/cmake/ament_cmake_ros-extras.cmake",
+			"/opt/ros/foxy/share/ament_cmake_ros/cmake/ament_cmake_rosConfig.cmake",
+			"/opt/ros/foxy/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_c_generate_interfaces.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 286,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 0,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 235,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 292,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 255,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 269,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 53,
+				"parent" : 8
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 286,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 151,
+				"parent" : 10
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 308,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 308,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 308,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 176,
+				"parent" : 4
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 278,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 145,
+				"parent" : 16
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 278,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 145,
+				"parent" : 18
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 278,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 145,
+				"parent" : 20
+			},
+			{
+				"command" : 9,
+				"file" : 3,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"file" : 8,
+				"parent" : 22
+			},
+			{
+				"command" : 1,
+				"file" : 8,
+				"line" : 41,
+				"parent" : 23
+			},
+			{
+				"file" : 7,
+				"parent" : 24
+			},
+			{
+				"command" : 1,
+				"file" : 7,
+				"line" : 9,
+				"parent" : 25
+			},
+			{
+				"file" : 6,
+				"parent" : 26
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 56,
+				"parent" : 27
+			},
+			{
+				"command" : 1,
+				"file" : 7,
+				"line" : 9,
+				"parent" : 25
+			},
+			{
+				"file" : 9,
+				"parent" : 29
+			},
+			{
+				"command" : 8,
+				"file" : 9,
+				"line" : 56,
+				"parent" : 30
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 272,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 145,
+				"parent" : 32
+			},
+			{
+				"command" : 1,
+				"file" : 8,
+				"line" : 41,
+				"parent" : 23
+			},
+			{
+				"file" : 19,
+				"parent" : 34
+			},
+			{
+				"command" : 9,
+				"file" : 19,
+				"line" : 21,
+				"parent" : 35
+			},
+			{
+				"file" : 18,
+				"parent" : 36
+			},
+			{
+				"command" : 1,
+				"file" : 18,
+				"line" : 41,
+				"parent" : 37
+			},
+			{
+				"file" : 17,
+				"parent" : 38
+			},
+			{
+				"command" : 9,
+				"file" : 17,
+				"line" : 21,
+				"parent" : 39
+			},
+			{
+				"file" : 16,
+				"parent" : 40
+			},
+			{
+				"command" : 1,
+				"file" : 16,
+				"line" : 41,
+				"parent" : 41
+			},
+			{
+				"file" : 15,
+				"parent" : 42
+			},
+			{
+				"command" : 9,
+				"file" : 15,
+				"line" : 21,
+				"parent" : 43
+			},
+			{
+				"file" : 14,
+				"parent" : 44
+			},
+			{
+				"command" : 1,
+				"file" : 14,
+				"line" : 41,
+				"parent" : 45
+			},
+			{
+				"file" : 13,
+				"parent" : 46
+			},
+			{
+				"command" : 9,
+				"file" : 13,
+				"line" : 12,
+				"parent" : 47
+			},
+			{
+				"file" : 12,
+				"parent" : 48
+			},
+			{
+				"command" : 1,
+				"file" : 12,
+				"line" : 41,
+				"parent" : 49
+			},
+			{
+				"file" : 11,
+				"parent" : 50
+			},
+			{
+				"command" : 1,
+				"file" : 11,
+				"line" : 9,
+				"parent" : 51
+			},
+			{
+				"file" : 10,
+				"parent" : 52
+			},
+			{
+				"command" : 8,
+				"file" : 10,
+				"line" : 56,
+				"parent" : 53
+			},
+			{
+				"command" : 9,
+				"file" : 15,
+				"line" : 21,
+				"parent" : 43
+			},
+			{
+				"file" : 24,
+				"parent" : 55
+			},
+			{
+				"command" : 1,
+				"file" : 24,
+				"line" : 41,
+				"parent" : 56
+			},
+			{
+				"file" : 23,
+				"parent" : 57
+			},
+			{
+				"command" : 9,
+				"file" : 23,
+				"line" : 21,
+				"parent" : 58
+			},
+			{
+				"file" : 22,
+				"parent" : 59
+			},
+			{
+				"command" : 1,
+				"file" : 22,
+				"line" : 41,
+				"parent" : 60
+			},
+			{
+				"file" : 21,
+				"parent" : 61
+			},
+			{
+				"command" : 1,
+				"file" : 21,
+				"line" : 9,
+				"parent" : 62
+			},
+			{
+				"file" : 20,
+				"parent" : 63
+			},
+			{
+				"command" : 8,
+				"file" : 20,
+				"line" : 56,
+				"parent" : 64
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 25,
+				"parent" : 66
+			},
+			{
+				"command" : 7,
+				"file" : 25,
+				"line" : 119,
+				"parent" : 67
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 145,
+				"parent" : 68
+			},
+			{
+				"command" : 10,
+				"file" : 4,
+				"line" : 50,
+				"parent" : 8
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 283,
+				"parent" : 4
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 238,
+				"parent" : 4
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 248,
+				"parent" : 4
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 158,
+				"parent" : 73
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 28,
+				"parent" : 75
+			},
+			{
+				"command" : 9,
+				"file" : 28,
+				"line" : 15,
+				"parent" : 76
+			},
+			{
+				"file" : 27,
+				"parent" : 77
+			},
+			{
+				"command" : 1,
+				"file" : 27,
+				"line" : 41,
+				"parent" : 78
+			},
+			{
+				"file" : 26,
+				"parent" : 79
+			},
+			{
+				"command" : 12,
+				"file" : 26,
+				"line" : 25,
+				"parent" : 80
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 262,
+				"parent" : 4
+			},
+			{
+				"command" : 13,
+				"file" : 4,
+				"line" : 52,
+				"parent" : 8
+			},
+			{
+				"command" : 13,
+				"file" : 5,
+				"line" : 141,
+				"parent" : 32
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=gnu99 -fPIC"
+				},
+				{
+					"backtrace" : 74,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 74,
+					"fragment" : "-Wextra"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "RCUTILS_ENABLE_FAULT_INJECTION"
+				},
+				{
+					"backtrace" : 81,
+					"define" : "ROS_PACKAGE_NAME=\"unitree_api\""
+				},
+				{
+					"define" : "unitree_api__rosidl_typesupport_introspection_c__pyext_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 82,
+					"path" : "/home/luolixin/unitree_ros2_ws/build/unitree_api/rosidl_generator_c"
+				},
+				{
+					"backtrace" : 82,
+					"path" : "/home/luolixin/unitree_ros2_ws/build/unitree_api/rosidl_generator_py"
+				},
+				{
+					"backtrace" : 82,
+					"path" : "/usr/include/python3.8"
+				},
+				{
+					"backtrace" : 83,
+					"path" : "/home/luolixin/unitree_ros2_ws/build/unitree_api/rosidl_typesupport_c"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/luolixin/unitree_ros2_ws/build/unitree_api/rosidl_typesupport_introspection_c"
+				},
+				{
+					"backtrace" : 84,
+					"isSystem" : true,
+					"path" : "/opt/ros/foxy/include"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					5
+				],
+				"standard" : "99"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 70,
+			"id" : "unitree_api::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "unitree_api__rosidl_generator_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 71,
+			"id" : "unitree_api__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 72,
+			"id" : "unitree_api__rosidl_typesupport_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "unitree_api__python::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 72,
+			"id" : "unitree_api__py::@6befae02b2f2473085b6"
+		}
+	],
+	"id" : "unitree_api__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 6,
+				"path" : "lib/python3.8/site-packages/unitree_api"
+			},
+			{
+				"backtrace" : 6,
+				"path" : "lib/python3.8/site-packages/unitree_api"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/home/luolixin/unitree_ros2_ws/install/unitree_api"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/luolixin/unitree_ros2_ws/build/unitree_api/rosidl_generator_py/unitree_api:/home/luolixin/unitree_ros2_ws/build/unitree_api:/opt/ros/foxy/lib:/opt/ros/foxy/share/geometry_msgs/cmake/../../../lib:/opt/ros/foxy/share/std_msgs/cmake/../../../lib:/opt/ros/foxy/share/builtin_interfaces/cmake/../../../lib:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "rosidl_generator_py/unitree_api/libunitree_api__python.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libpython3.8.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "libunitree_api__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "libunitree_api__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/opt/ros/foxy/lib/librmw.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/opt/ros/foxy/lib/librosidl_runtime_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/opt/ros/foxy/share/geometry_msgs/cmake/../../../lib/libgeometry_msgs__python.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/opt/ros/foxy/share/std_msgs/cmake/../../../lib/libstd_msgs__python.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/opt/ros/foxy/share/builtin_interfaces/cmake/../../../lib/libbuiltin_interfaces__python.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "libunitree_api__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "/opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "/opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "/opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "/opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "/opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "/opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "/opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "/opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "/opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "/opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "/opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "/opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "/opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "/opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 28,
+				"fragment" : "/opt/ros/foxy/lib/librosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "/opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "/opt/ros/foxy/lib/librosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "/opt/ros/foxy/lib/librosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "/opt/ros/foxy/lib/librosidl_runtime_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 54,
+				"fragment" : "/opt/ros/foxy/lib/librcpputils.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/opt/ros/foxy/lib/librcutils.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 65,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 69,
+				"fragment" : "/opt/ros/foxy/lib/librosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "unitree_api__rosidl_typesupport_introspection_c__pyext",
+	"nameOnDisk" : "unitree_api_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/luolixin/unitree_ros2_ws/build/unitree_api/rosidl_generator_py/unitree_api/_unitree_api_s.ep.rosidl_typesupport_introspection_c.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

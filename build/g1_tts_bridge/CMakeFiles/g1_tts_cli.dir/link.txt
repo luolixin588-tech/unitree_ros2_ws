@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/g1_tts_cli.dir/src/g1_tts_cli.cpp.o -o g1_tts_cli   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib: /usr/local/lib/libunitree_sdk2.a -lddsc -lddscxx -lpthread 

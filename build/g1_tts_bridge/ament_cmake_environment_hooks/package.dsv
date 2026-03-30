@@ -1,0 +1,4 @@
+source;share/g1_tts_bridge/local_setup.bash
+source;share/g1_tts_bridge/local_setup.dsv
+source;share/g1_tts_bridge/local_setup.sh
+source;share/g1_tts_bridge/local_setup.zsh

@@ -1,0 +1,211 @@
+[0.000000] (-) TimerEvent: {}
+[0.000523] (-) JobUnselected: {'identifier': 'cyclonedds'}
+[0.000976] (-) JobUnselected: {'identifier': 'my_g1_audio'}
+[0.001033] (-) JobUnselected: {'identifier': 'rmw_cyclonedds_cpp'}
+[0.001075] (-) JobUnselected: {'identifier': 'unitree_api'}
+[0.001116] (-) JobUnselected: {'identifier': 'unitree_go'}
+[0.001154] (-) JobUnselected: {'identifier': 'unitree_hg'}
+[0.001191] (-) JobUnselected: {'identifier': 'unitree_ros2_example'}
+[0.001254] (g1_tts_bridge) JobQueued: {'identifier': 'g1_tts_bridge', 'dependencies': OrderedDict()}
+[0.001307] (g1_tts_bridge) JobStarted: {'identifier': 'g1_tts_bridge'}
+[0.012171] (g1_tts_bridge) JobProgress: {'identifier': 'g1_tts_bridge', 'progress': 'cmake'}
+[0.012926] (g1_tts_bridge) Command: {'cmd': ['/usr/local/bin/cmake', '/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge', '-DCMAKE_INSTALL_PREFIX=/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge'], 'cwd': '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', ''), ('USER', 'luolixin'), ('SSH_CLIENT', '10.133.59.101 51686 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/luolixin'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/luolixin/unitree_ros2_ws'), ('TERM_PROGRAM_VERSION', '1.109.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1002/vscode-ipc-6c1aeb56-b3b9-451b-bf62-6878f774b6ea.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/extensions/git/dist/askpass-main.js'), ('HF_ENDPOINT', 'https://hf-mirror.com'), ('VSCODE_GIT_ASKPASS_NODE', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/luolixin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/luolixin/miniconda3'), ('LOGNAME', 'luolixin'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '313'), ('_CE_CONDA', ''), ('PATH', '/opt/ros/foxy/bin:/home/luolixin/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/luolixin/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/bin/remote-cli:/home/luolixin/miniconda3/condabin:/opt/ollama/bin:/opt/ollama/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/luolixin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/luolixin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-498a64d524f65990.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/luolixin/.vscode-server/data/User/workspaceStorage/f7ae3bb4047145a8e0ecc792a0be8386/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1002/vscode-git-a19bb0aba0.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/luolixin/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('OLLAMA_HOME', '/opt/ollama'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', ''), ('_CONDA_EXE', '/home/luolixin/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('CONDA_EXE', '/home/luolixin/miniconda3/bin/conda'), ('SSH_CONNECTION', '10.133.59.101 51686 10.133.56.239 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('CONDA_PREFIX', ''), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.089387] (g1_tts_bridge) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.099377] (-) TimerEvent: {}
+[0.178464] (g1_tts_bridge) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.199473] (-) TimerEvent: {}
+[0.218804] (g1_tts_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299589] (-) TimerEvent: {}
+[0.326771] (g1_tts_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.359855] (g1_tts_bridge) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.360475] (g1_tts_bridge) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.361756] (g1_tts_bridge) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.386482] (g1_tts_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399658] (-) TimerEvent: {}
+[0.499986] (g1_tts_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.500338] (-) TimerEvent: {}
+[0.536440] (g1_tts_bridge) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.537090] (g1_tts_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.538777] (g1_tts_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.541685] (g1_tts_bridge) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.547314] (g1_tts_bridge) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):\n'}
+[0.547604] (g1_tts_bridge) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[0.547754] (g1_tts_bridge) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[0.547888] (g1_tts_bridge) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.548020] (g1_tts_bridge) StderrLine: {'line': b'\n'}
+[0.548164] (g1_tts_bridge) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.548262] (g1_tts_bridge) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)\n'}
+[0.548354] (g1_tts_bridge) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)\n'}
+[0.548445] (g1_tts_bridge) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.548533] (g1_tts_bridge) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.548622] (g1_tts_bridge) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.548709] (g1_tts_bridge) StderrLine: {'line': b'  CMakeLists.txt:14 (find_package)\n'}
+[0.548803] (g1_tts_bridge) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.548888] (g1_tts_bridge) StderrLine: {'line': b'\x1b[0m\n'}
+[0.569881] (g1_tts_bridge) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.570123] (g1_tts_bridge) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.600423] (-) TimerEvent: {}
+[0.700794] (-) TimerEvent: {}
+[0.707912] (g1_tts_bridge) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.784788] (g1_tts_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.796740] (g1_tts_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.800846] (-) TimerEvent: {}
+[0.900393] (g1_tts_bridge) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.900917] (-) TimerEvent: {}
+[0.954179] (g1_tts_bridge) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.001071] (-) TimerEvent: {}
+[1.101571] (-) TimerEvent: {}
+[1.116448] (g1_tts_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.201740] (-) TimerEvent: {}
+[1.248240] (g1_tts_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.251621] (g1_tts_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.253780] (g1_tts_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.301871] (-) TimerEvent: {}
+[1.348337] (g1_tts_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.348896] (g1_tts_bridge) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.401952] (-) TimerEvent: {}
+[1.428505] (g1_tts_bridge) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.428814] (g1_tts_bridge) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.502090] (-) TimerEvent: {}
+[1.521917] (g1_tts_bridge) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.525125] (g1_tts_bridge) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.602218] (-) TimerEvent: {}
+[1.702739] (-) TimerEvent: {}
+[1.803237] (-) TimerEvent: {}
+[1.903745] (-) TimerEvent: {}
+[1.930347] (g1_tts_bridge) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.957442] (g1_tts_bridge) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:40 (find_package):\n'}
+[1.957848] (g1_tts_bridge) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[1.958026] (g1_tts_bridge) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[1.958208] (g1_tts_bridge) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[1.958351] (g1_tts_bridge) StderrLine: {'line': b'\n'}
+[1.958487] (g1_tts_bridge) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.958615] (g1_tts_bridge) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[1.958690] (g1_tts_bridge) StderrLine: {'line': b'  CMakeLists.txt:21 (rosidl_generate_interfaces)\n'}
+[1.958764] (g1_tts_bridge) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.958840] (g1_tts_bridge) StderrLine: {'line': b'\x1b[0m\n'}
+[1.979255] (g1_tts_bridge) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[2.003833] (-) TimerEvent: {}
+[2.104282] (-) TimerEvent: {}
+[2.185544] (g1_tts_bridge) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[2.204436] (-) TimerEvent: {}
+[2.304935] (-) TimerEvent: {}
+[2.405457] (-) TimerEvent: {}
+[2.505948] (-) TimerEvent: {}
+[2.587129] (g1_tts_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.606032] (-) TimerEvent: {}
+[2.706421] (-) TimerEvent: {}
+[2.768935] (g1_tts_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.777948] (g1_tts_bridge) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):\n'}
+[2.778350] (g1_tts_bridge) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[2.778536] (g1_tts_bridge) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[2.778693] (g1_tts_bridge) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[2.778840] (g1_tts_bridge) StderrLine: {'line': b'\n'}
+[2.778984] (g1_tts_bridge) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.779177] (g1_tts_bridge) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.779349] (g1_tts_bridge) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.779488] (g1_tts_bridge) StderrLine: {'line': b'  CMakeLists.txt:21 (rosidl_generate_interfaces)\n'}
+[2.779623] (g1_tts_bridge) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.779758] (g1_tts_bridge) StderrLine: {'line': b'\x1b[0m\n'}
+[2.799302] (g1_tts_bridge) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[2.800566] (g1_tts_bridge) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[2.801164] (g1_tts_bridge) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:45 (find_package):\n'}
+[2.801409] (g1_tts_bridge) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[2.801568] (g1_tts_bridge) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[2.801712] (g1_tts_bridge) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[2.801851] (g1_tts_bridge) StderrLine: {'line': b'\n'}
+[2.801983] (g1_tts_bridge) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.802121] (g1_tts_bridge) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[2.802254] (g1_tts_bridge) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.802409] (g1_tts_bridge) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.802538] (g1_tts_bridge) StderrLine: {'line': b'  CMakeLists.txt:21 (rosidl_generate_interfaces)\n'}
+[2.802667] (g1_tts_bridge) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.802797] (g1_tts_bridge) StderrLine: {'line': b'\x1b[0m\n'}
+[2.806469] (-) TimerEvent: {}
+[2.823668] (g1_tts_bridge) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:133 (find_package):\n'}
+[2.823864] (g1_tts_bridge) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[2.824005] (g1_tts_bridge) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[2.824140] (g1_tts_bridge) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[2.824273] (g1_tts_bridge) StderrLine: {'line': b'\n'}
+[2.824407] (g1_tts_bridge) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.824534] (g1_tts_bridge) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[2.824663] (g1_tts_bridge) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.824790] (g1_tts_bridge) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.824922] (g1_tts_bridge) StderrLine: {'line': b'  CMakeLists.txt:21 (rosidl_generate_interfaces)\n'}
+[2.825052] (g1_tts_bridge) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.825180] (g1_tts_bridge) StderrLine: {'line': b'\x1b[0m\n'}
+[2.834696] (g1_tts_bridge) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[2.835060] (g1_tts_bridge) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.835149] (g1_tts_bridge) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[2.835212] (g1_tts_bridge) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[2.857543] (g1_tts_bridge) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.906644] (-) TimerEvent: {}
+[2.987818] (g1_tts_bridge) StdoutLine: {'line': b'-- Configuring done (3.0s)\n'}
+[3.006786] (-) TimerEvent: {}
+[3.063615] (g1_tts_bridge) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[3.091986] (g1_tts_bridge) StdoutLine: {'line': b'-- Build files have been written to: /home/luolixin/unitree_ros2_ws/build/g1_tts_bridge\n'}
+[3.106879] (-) TimerEvent: {}
+[3.110171] (g1_tts_bridge) CommandEnded: {'returncode': 0}
+[3.111741] (g1_tts_bridge) JobProgress: {'identifier': 'g1_tts_bridge', 'progress': 'build'}
+[3.114144] (g1_tts_bridge) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge', '--', '-j40', '-l40'], 'cwd': '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', ''), ('USER', 'luolixin'), ('SSH_CLIENT', '10.133.59.101 51686 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/luolixin'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/luolixin/unitree_ros2_ws'), ('TERM_PROGRAM_VERSION', '1.109.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1002/vscode-ipc-6c1aeb56-b3b9-451b-bf62-6878f774b6ea.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/extensions/git/dist/askpass-main.js'), ('HF_ENDPOINT', 'https://hf-mirror.com'), ('VSCODE_GIT_ASKPASS_NODE', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/luolixin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/luolixin/miniconda3'), ('LOGNAME', 'luolixin'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '313'), ('_CE_CONDA', ''), ('PATH', '/opt/ros/foxy/bin:/home/luolixin/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/luolixin/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/bin/remote-cli:/home/luolixin/miniconda3/condabin:/opt/ollama/bin:/opt/ollama/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/luolixin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/luolixin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-498a64d524f65990.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/luolixin/.vscode-server/data/User/workspaceStorage/f7ae3bb4047145a8e0ecc792a0be8386/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1002/vscode-git-a19bb0aba0.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/luolixin/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('OLLAMA_HOME', '/opt/ollama'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', ''), ('_CONDA_EXE', '/home/luolixin/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('CONDA_EXE', '/home/luolixin/miniconda3/bin/conda'), ('SSH_CONNECTION', '10.133.59.101 51686 10.133.56.239 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('CONDA_PREFIX', ''), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[3.152163] (g1_tts_bridge) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.158471] (g1_tts_bridge) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.207094] (-) TimerEvent: {}
+[3.307716] (-) TimerEvent: {}
+[3.314653] (g1_tts_bridge) StdoutLine: {'line': b'[  6%] Built target g1_tts_bridge__cpp\n'}
+[3.320913] (g1_tts_bridge) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.321593] (g1_tts_bridge) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/g1_tts_bridge__rosidl_generator_c.dir/rosidl_generator_c/g1_tts_bridge/srv/detail/tts__functions.c.o\x1b[0m\n'}
+[3.322889] (g1_tts_bridge) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.325401] (g1_tts_bridge) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.373116] (g1_tts_bridge) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking C shared library libg1_tts_bridge__rosidl_generator_c.so\x1b[0m\n'}
+[3.407838] (-) TimerEvent: {}
+[3.408143] (g1_tts_bridge) StdoutLine: {'line': b'[ 21%] Built target g1_tts_bridge__rosidl_generator_c\n'}
+[3.419204] (g1_tts_bridge) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.419390] (g1_tts_bridge) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.482266] (g1_tts_bridge) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/g1_tts_bridge__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/g1_tts_bridge/srv/tts__type_support.cpp.o\x1b[0m\n'}
+[3.482505] (g1_tts_bridge) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/g1_tts_bridge__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/g1_tts_bridge/srv/detail/tts__type_support.cpp.o\x1b[0m\n'}
+[3.493856] (g1_tts_bridge) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/g1_tts_bridge__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/g1_tts_bridge/srv/detail/dds_fastrtps/tts__type_support.cpp.o\x1b[0m\n'}
+[3.507919] (-) TimerEvent: {}
+[3.565156] (g1_tts_bridge) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/g1_tts_bridge__rosidl_typesupport_c.dir/rosidl_typesupport_c/g1_tts_bridge/srv/tts__type_support.cpp.o\x1b[0m\n'}
+[3.584261] (g1_tts_bridge) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/g1_tts_bridge__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/g1_tts_bridge/srv/detail/tts__type_support.c.o\x1b[0m\n'}
+[3.599421] (g1_tts_bridge) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libg1_tts_bridge__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.608013] (-) TimerEvent: {}
+[3.618437] (g1_tts_bridge) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking C shared library libg1_tts_bridge__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.636714] (g1_tts_bridge) StdoutLine: {'line': b'[ 48%] Built target g1_tts_bridge__rosidl_typesupport_c\n'}
+[3.649682] (g1_tts_bridge) StdoutLine: {'line': b'[ 48%] Built target g1_tts_bridge__rosidl_typesupport_introspection_c\n'}
+[3.663236] (g1_tts_bridge) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libg1_tts_bridge__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.677582] (g1_tts_bridge) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libg1_tts_bridge__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.698044] (g1_tts_bridge) StdoutLine: {'line': b'[ 54%] Built target g1_tts_bridge__rosidl_typesupport_cpp\n'}
+[3.708120] (-) TimerEvent: {}
+[3.739794] (g1_tts_bridge) StdoutLine: {'line': b'[ 54%] Built target g1_tts_bridge__rosidl_typesupport_introspection_cpp\n'}
+[3.781834] (g1_tts_bridge) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libg1_tts_bridge__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.808290] (-) TimerEvent: {}
+[3.853315] (g1_tts_bridge) StdoutLine: {'line': b'[ 57%] Built target g1_tts_bridge__rosidl_typesupport_fastrtps_cpp\n'}
+[3.862196] (g1_tts_bridge) StdoutLine: {'line': b'[ 60%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.908394] (-) TimerEvent: {}
+[4.008872] (-) TimerEvent: {}
+[4.024397] (g1_tts_bridge) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/g1_tts_bridge__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/g1_tts_bridge/srv/detail/tts__type_support_c.cpp.o\x1b[0m\n'}
+[4.109042] (-) TimerEvent: {}
+[4.209694] (-) TimerEvent: {}
+[4.254635] (g1_tts_bridge) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libg1_tts_bridge__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.309885] (-) TimerEvent: {}
+[4.330192] (g1_tts_bridge) StdoutLine: {'line': b'[ 66%] Built target g1_tts_bridge__rosidl_typesupport_fastrtps_c\n'}
+[4.348356] (g1_tts_bridge) StdoutLine: {'line': b'[ 66%] Built target g1_tts_bridge\n'}
+[4.366243] (g1_tts_bridge) StdoutLine: {'line': b'[ 69%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.367201] (g1_tts_bridge) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/g1_tts_service.dir/src/g1_tts_service.cpp.o\x1b[0m\n'}
+[4.410024] (-) TimerEvent: {}
+[4.444233] (g1_tts_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:3\x1b[m\x1b[K:\n'}
+[4.444596] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/include/g1/g1_audio_client.hpp:6:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kbase_client.hpp: No such file or directory\n'}
+[4.444800] (g1_tts_bridge) StderrLine: {'line': b'    6 | #include \x1b[01;31m\x1b[K"base_client.hpp"\x1b[m\x1b[K\n'}
+[4.444947] (g1_tts_bridge) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.445084] (g1_tts_bridge) StderrLine: {'line': b'compilation terminated.\n'}
+[4.449834] (g1_tts_bridge) StderrLine: {'line': b'make[2]: *** [CMakeFiles/g1_tts_service.dir/build.make:76: CMakeFiles/g1_tts_service.dir/src/g1_tts_service.cpp.o] Error 1\n'}
+[4.450153] (g1_tts_bridge) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:545: CMakeFiles/g1_tts_service.dir/all] Error 2\n'}
+[4.450281] (g1_tts_bridge) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[4.510154] (-) TimerEvent: {}
+[4.610680] (-) TimerEvent: {}
+[4.647000] (g1_tts_bridge) StdoutLine: {'line': b'[ 72%] Built target g1_tts_bridge__py\n'}
+[4.648288] (g1_tts_bridge) StderrLine: {'line': b'make: *** [Makefile:146: all] Error 2\n'}
+[4.652897] (g1_tts_bridge) CommandEnded: {'returncode': 2}
+[4.675670] (g1_tts_bridge) JobEnded: {'identifier': 'g1_tts_bridge', 'rc': 2}
+[4.687161] (-) EventReactorShutdown: {}

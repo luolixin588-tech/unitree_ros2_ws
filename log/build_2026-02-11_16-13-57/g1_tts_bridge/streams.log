@@ -1,0 +1,96 @@
+[0.013s] Invoking command in '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/local/bin/cmake /home/luolixin/unitree_ros2_ws/src/g1_tts_bridge -Dunitree_sdk2_DIR=/usr/local/lib/cmake/unitree_sdk2 -DCMAKE_INSTALL_PREFIX=/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge
+[0.034s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.037s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.038s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.038s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.038s]   the cmake_policy command to set the policy and suppress this warning.
+[0.038s] 
+[0.038s] Call Stack (most recent call first):
+[0.038s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.038s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.038s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.038s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.038s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.038s]   CMakeLists.txt:14 (find_package)
+[0.038s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.038s] [0m
+[0.059s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.060s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.180s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.245s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.254s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.503s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.628s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.631s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.021s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.051s] [33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:40 (find_package):
+[1.052s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.052s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.052s]   the cmake_policy command to set the policy and suppress this warning.
+[1.052s] 
+[1.052s] Call Stack (most recent call first):
+[1.052s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[1.052s]   CMakeLists.txt:23 (rosidl_generate_interfaces)
+[1.053s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.053s] [0m
+[1.072s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.276s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.677s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.862s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.872s] [33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[1.873s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.873s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.873s]   the cmake_policy command to set the policy and suppress this warning.
+[1.873s] 
+[1.873s] Call Stack (most recent call first):
+[1.873s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.874s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.874s]   CMakeLists.txt:23 (rosidl_generate_interfaces)
+[1.874s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.874s] [0m
+[1.896s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.896s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.897s] [33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:45 (find_package):
+[1.897s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.897s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.897s]   the cmake_policy command to set the policy and suppress this warning.
+[1.897s] 
+[1.897s] Call Stack (most recent call first):
+[1.897s]   /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[1.898s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.898s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.898s]   CMakeLists.txt:23 (rosidl_generate_interfaces)
+[1.898s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.898s] [0m
+[1.919s] [33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:133 (find_package):
+[1.919s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.919s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.920s]   the cmake_policy command to set the policy and suppress this warning.
+[1.920s] 
+[1.920s] Call Stack (most recent call first):
+[1.920s]   /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[1.920s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.920s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.920s]   CMakeLists.txt:23 (rosidl_generate_interfaces)
+[1.921s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.921s] [0m
+[1.924s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.924s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.924s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[2.042s] -- Configuring done (2.0s)
+[2.119s] [31mCMake Error at CMakeLists.txt:41 (target_link_libraries):
+[2.120s]   Target "g1_tts_service" links to:
+[2.120s] 
+[2.120s]     unitree_sdk2::unitree_sdk2
+[2.120s] 
+[2.120s]   but the target was not found.  Possible reasons include:
+[2.120s] 
+[2.121s]     * There is a typo in the target name.
+[2.121s]     * A find_package call is missing for an IMPORTED target.
+[2.121s]     * An ALIAS target is missing.
+[2.121s] 
+[2.121s] 
+[2.121s] [0m
+[2.121s] -- Generating done (0.1s)
+[2.123s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[2.133s] Invoked command in '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/local/bin/cmake /home/luolixin/unitree_ros2_ws/src/g1_tts_bridge -Dunitree_sdk2_DIR=/usr/local/lib/cmake/unitree_sdk2 -DCMAKE_INSTALL_PREFIX=/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge

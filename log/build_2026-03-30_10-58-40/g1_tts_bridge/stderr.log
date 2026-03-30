@@ -1,0 +1,78 @@
+In file included from /opt/unitree_robotics/include/unitree/common/any.hpp:4,
+                 from /opt/unitree_robotics/include/unitree/common/json/json.hpp:4,
+                 from /opt/unitree_robotics/include/unitree/common/dds/dds_qos_policy_parameter.hpp:4,
+                 from /opt/unitree_robotics/include/unitree/common/dds/dds_qos_parameter.hpp:4,
+                 from /opt/unitree_robotics/include/unitree/common/dds/dds_parameter.hpp:5,
+                 from /opt/unitree_robotics/include/unitree/common/dds/dds_factory_model.hpp:4,
+                 from /opt/unitree_robotics/include/unitree/robot/channel/channel_factory.hpp:4,
+                 from /home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_cli.cpp:5:
+/opt/unitree_robotics/include/unitree/common/exception.hpp:123:37: warning: ISO C++ does not permit named variadic macros [-Wvariadic-macros]
+  123 | #define UT_THROW(ExceptionType, args...)    \
+      |                                     ^~~
+/opt/unitree_robotics/include/unitree/common/exception.hpp:131:51: warning: ISO C++ does not permit named variadic macros [-Wvariadic-macros]
+  131 | #define UT_THROW_IF(condition, ExceptionType, args...)  \
+      |                                                   ^~~
+In file included from /opt/unitree_robotics/include/dds/ddsi/q_feature_check.h:37,
+                 from /opt/unitree_robotics/include/dds/ddsi/q_protocol.h:17,
+                 from /opt/unitree_robotics/include/dds/ddsi/ddsi_xqos.h:18,
+                 from /opt/unitree_robotics/include/dds/ddsi/ddsi_sertype.h:18,
+                 from /opt/unitree_robotics/include/dds/ddsi/ddsi_serdata.h:19,
+                 from /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:22,
+                 from /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/AnyTopicDelegate.hpp:23,
+                 from /usr/local/include/ddscxx/dds/topic/detail/AnyTopic.hpp:22,
+                 from /usr/local/include/ddscxx/dds/topic/AnyTopic.hpp:22,
+                 from /usr/local/include/ddscxx/dds/topic/detail/Topic.hpp:27,
+                 from /usr/local/include/ddscxx/dds/topic/Topic.hpp:21,
+                 from /usr/local/include/ddscxx/dds/topic/ddstopic.hpp:23,
+                 from /usr/local/include/ddscxx/dds/dds.hpp:35,
+                 from /opt/unitree_robotics/include/unitree/common/dds/dds_entity.hpp:4,
+                 from /opt/unitree_robotics/include/unitree/common/dds/dds_topic_channel.hpp:4,
+                 from /opt/unitree_robotics/include/unitree/common/dds/dds_factory_model.hpp:5,
+                 from /opt/unitree_robotics/include/unitree/robot/channel/channel_factory.hpp:4,
+                 from /home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_cli.cpp:5:
+/opt/unitree_robotics/include/dds/ddsrt/sockets.h:280:27: warning: ISO C++ forbids flexible array member ‘addrs’ [-Wpedantic]
+  280 |   struct sockaddr_storage addrs[];
+      |                           ^~~~~
+In file included from /opt/unitree_robotics/include/dds/ddsi/ddsi_xqos.h:18,
+                 from /opt/unitree_robotics/include/dds/ddsi/ddsi_sertype.h:18,
+                 from /opt/unitree_robotics/include/dds/ddsi/ddsi_serdata.h:19,
+                 from /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/TopicTraits.hpp:22,
+                 from /usr/local/include/ddscxx/org/eclipse/cyclonedds/topic/AnyTopicDelegate.hpp:23,
+                 from /usr/local/include/ddscxx/dds/topic/detail/AnyTopic.hpp:22,
+                 from /usr/local/include/ddscxx/dds/topic/AnyTopic.hpp:22,
+                 from /usr/local/include/ddscxx/dds/topic/detail/Topic.hpp:27,
+                 from /usr/local/include/ddscxx/dds/topic/Topic.hpp:21,
+                 from /usr/local/include/ddscxx/dds/topic/ddstopic.hpp:23,
+                 from /usr/local/include/ddscxx/dds/dds.hpp:35,
+                 from /opt/unitree_robotics/include/unitree/common/dds/dds_entity.hpp:4,
+                 from /opt/unitree_robotics/include/unitree/common/dds/dds_topic_channel.hpp:4,
+                 from /opt/unitree_robotics/include/unitree/common/dds/dds_factory_model.hpp:5,
+                 from /opt/unitree_robotics/include/unitree/robot/channel/channel_factory.hpp:4,
+                 from /home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_cli.cpp:5:
+/opt/unitree_robotics/include/dds/ddsi/q_protocol.h:284:12: warning: ISO C++ forbids flexible array member ‘bits’ [-Wpedantic]
+  284 |   uint32_t bits[];
+      |            ^~~~
+/opt/unitree_robotics/include/dds/ddsi/q_protocol.h:299:12: warning: ISO C++ forbids flexible array member ‘bits’ [-Wpedantic]
+  299 |   uint32_t bits[];
+      |            ^~~~
+/opt/unitree_robotics/include/dds/ddsi/q_protocol.h:338:12: warning: ISO C++ forbids flexible array member ‘bits’ [-Wpedantic]
+  338 |   uint32_t bits[];
+      |            ^~~~
+In file included from /opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_client.hpp:8,
+                 from /home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_cli.cpp:6:
+/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp: In member function ‘virtual void unitree::robot::g1::TtsMakerParameter::fromJson(unitree::common::JsonMap&)’:
+/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:30:34: warning: unused parameter ‘json’ [-Wunused-parameter]
+   30 |   void fromJson(common::JsonMap &json) {}
+      |                 ~~~~~~~~~~~~~~~~~^~~~
+/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp: In member function ‘virtual void unitree::robot::g1::PlayStreamParameter::fromJson(unitree::common::JsonMap&)’:
+/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:48:34: warning: unused parameter ‘json’ [-Wunused-parameter]
+   48 |   void fromJson(common::JsonMap &json) {}
+      |                 ~~~~~~~~~~~~~~~~~^~~~
+/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp: In member function ‘virtual void unitree::robot::g1::PlayStopParameter::fromJson(unitree::common::JsonMap&)’:
+/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:64:34: warning: unused parameter ‘json’ [-Wunused-parameter]
+   64 |   void fromJson(common::JsonMap &json) {}
+      |                 ~~~~~~~~~~~~~~~~~^~~~
+/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp: In member function ‘virtual void unitree::robot::g1::LedControlParameter::fromJson(unitree::common::JsonMap&)’:
+/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:78:34: warning: unused parameter ‘json’ [-Wunused-parameter]
+   78 |   void fromJson(common::JsonMap &json) {}
+      |                 ~~~~~~~~~~~~~~~~~^~~~

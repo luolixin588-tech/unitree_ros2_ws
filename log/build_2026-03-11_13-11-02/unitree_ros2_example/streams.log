@@ -1,0 +1,45 @@
+[0.149s] Invoking command in '/home/luolixin/unitree_ros2_ws/build/unitree_ros2_example': CMAKE_PREFIX_PATH=/home/luolixin/unitree_ros2_ws/install/unitree_hg:/home/luolixin/unitree_ros2_ws/install/unitree_go:/home/luolixin/unitree_ros2_ws/install/unitree_api:/home/luolixin/unitree_ros2_ws/install/unitree_ros2_example:/home/luolixin/unitree_ros2_ws/install/rmw_cyclonedds_cpp:/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge:/home/luolixin/unitree_ros2_ws/install/cyclonedds:/home/luolixin/unitree_ros2_ws/src/unitree_ros2/cyclonedds_ws/install/cyclonedds:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake --build /home/luolixin/unitree_ros2_ws/build/unitree_ros2_example -- -j40 -l40
+[0.290s] [  1%] [32mBuilding CXX object CMakeFiles/g1_arm_action_example.dir/src/g1/high_level/g1_arm_action_example.cpp.o[0m
+[0.291s] [  6%] Built target g1_dex3_example
+[0.292s] [ 20%] Built target read_low_state_hg
+[0.292s] [ 20%] Built target g1_low_level_example
+[0.292s] [ 20%] Built target read_low_state
+[0.293s] [ 24%] Built target low_level_ctrl
+[0.293s] [ 29%] Built target low_level_ctrl_hg
+[0.293s] [ 34%] Built target go2_sport_client
+[0.293s] [ 44%] Built target read_motion_state
+[0.293s] [ 44%] Built target read_wireless_controller
+[0.293s] [ 46%] Built target go2_robot_state_client
+[0.294s] [ 60%] Built target g1_audio_client_example
+[0.294s] [ 60%] Built target g1_arm_sdk_dds_example
+[0.294s] [ 60%] Built target g1_ankle_swing_example
+[0.294s] [ 65%] Built target go2_stand_example
+[0.294s] [ 70%] Built target b2w_stand_example
+[0.294s] [ 75%] Built target b2_stand_example
+[0.295s] [ 81%] Built target g1_loco_client_example
+[0.295s] [ 86%] Built target b2_sport_client
+[0.296s] [ 96%] Built target b2w_sport_client
+[0.296s] [ 96%] Built target g1_dual_arm_example
+[0.343s] In file included from [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:11[m[K:
+[0.343s] [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/include/common/ut_errror.hpp:13:59:[m[K [01;35m[Kwarning: [m[Kbackslash-newline at end of file
+[0.343s]    13 | #define UT_PRINT_ERR(code, error)                         \
+[0.343s]       |                                                            
+[1.848s] In file included from [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:12[m[K:
+[1.849s] [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/include/g1/g1_arm_action_client.hpp:45:51:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[1.849s]    45 |     "sport_services_interface#Expert%20interface")[01;35m[K;[m[K
+[1.849s]       |                                                   [01;35m[K^[m[K
+[1.866s] [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:[m[K In constructor ‘[01m[KG1ArmActionNode::G1ArmActionNode()[m[K’:
+[1.866s] [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:20:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient_[m[K’ was not declared in this scope
+[1.866s]    20 |     [01;31m[Kclient_[m[K = std::make_shared<unitree::robot::g1::G1ArmActionClient>(this);
+[1.866s]       |     [01;31m[K^~~~~~~[m[K
+[1.878s] [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:[m[K In member function ‘[01m[Kvoid G1ArmActionNode::ProcessAction(int32_t)[m[K’:
+[1.878s] [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:85:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient_[m[K’ was not declared in this scope
+[1.878s]    85 |       int32_t ret = [01;31m[Kclient_[m[K->GetActionList(action_list_data);
+[1.878s]       |                     [01;31m[K^~~~~~~[m[K
+[1.880s] [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:93:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient_[m[K’ was not declared in this scope
+[1.880s]    93 |       int32_t ret = [01;31m[Kclient_[m[K->ExecuteAction(action_id);
+[1.880s]       |                     [01;31m[K^~~~~~~[m[K
+[3.690s] make[2]: *** [CMakeFiles/g1_arm_action_example.dir/build.make:76: CMakeFiles/g1_arm_action_example.dir/src/g1/high_level/g1_arm_action_example.cpp.o] Error 1
+[3.690s] make[1]: *** [CMakeFiles/Makefile2:463: CMakeFiles/g1_arm_action_example.dir/all] Error 2
+[3.691s] make: *** [Makefile:146: all] Error 2
+[3.694s] Invoked command in '/home/luolixin/unitree_ros2_ws/build/unitree_ros2_example' returned '2': CMAKE_PREFIX_PATH=/home/luolixin/unitree_ros2_ws/install/unitree_hg:/home/luolixin/unitree_ros2_ws/install/unitree_go:/home/luolixin/unitree_ros2_ws/install/unitree_api:/home/luolixin/unitree_ros2_ws/install/unitree_ros2_example:/home/luolixin/unitree_ros2_ws/install/rmw_cyclonedds_cpp:/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge:/home/luolixin/unitree_ros2_ws/install/cyclonedds:/home/luolixin/unitree_ros2_ws/src/unitree_ros2/cyclonedds_ws/install/cyclonedds:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake --build /home/luolixin/unitree_ros2_ws/build/unitree_ros2_example -- -j40 -l40

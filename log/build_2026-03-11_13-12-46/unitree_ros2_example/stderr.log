@@ -1,0 +1,8 @@
+In file included from [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:11[m[K:
+[01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/include/common/ut_errror.hpp:13:59:[m[K [01;35m[Kwarning: [m[Kbackslash-newline at end of file
+   13 | #define UT_PRINT_ERR(code, error)                         \
+      |                                                            
+In file included from [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:12[m[K:
+[01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/include/g1/g1_arm_action_client.hpp:45:51:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   45 |     "sport_services_interface#Expert%20interface")[01;35m[K;[m[K
+      |                                                   [01;35m[K^[m[K

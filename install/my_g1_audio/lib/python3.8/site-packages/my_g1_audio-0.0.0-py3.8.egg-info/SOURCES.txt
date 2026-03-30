@@ -1,0 +1,20 @@
+package.xml
+setup.cfg
+setup.py
+../../build/my_g1_audio/my_g1_audio.egg-info/PKG-INFO
+../../build/my_g1_audio/my_g1_audio.egg-info/SOURCES.txt
+../../build/my_g1_audio/my_g1_audio.egg-info/dependency_links.txt
+../../build/my_g1_audio/my_g1_audio.egg-info/entry_points.txt
+../../build/my_g1_audio/my_g1_audio.egg-info/requires.txt
+../../build/my_g1_audio/my_g1_audio.egg-info/top_level.txt
+../../build/my_g1_audio/my_g1_audio.egg-info/zip-safe
+my_g1_audio/__init__.py
+my_g1_audio/audio_bridge_node.py
+my_g1_audio/brain.py
+my_g1_audio/brain_update copy.py
+my_g1_audio/brain_update.py
+my_g1_audio/search_neuroxiv.py
+resource/my_g1_audio
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

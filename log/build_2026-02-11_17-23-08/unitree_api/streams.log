@@ -1,0 +1,464 @@
+[0.024s] Invoking command in '/home/luolixin/unitree_ros2_ws/build/unitree_api': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake /home/luolixin/unitree_ros2_ws/src/unitree_ros2/cyclonedds_ws/src/unitree/unitree_api -DCMAKE_INSTALL_PREFIX=/home/luolixin/unitree_ros2_ws/install/unitree_api
+[0.100s] -- The C compiler identification is GNU 9.4.0
+[0.190s] -- The CXX compiler identification is GNU 9.4.0
+[0.235s] -- Detecting C compiler ABI info
+[0.340s] -- Detecting C compiler ABI info - done
+[0.375s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.376s] -- Detecting C compile features
+[0.377s] -- Detecting C compile features - done
+[0.399s] -- Detecting CXX compiler ABI info
+[0.512s] -- Detecting CXX compiler ABI info - done
+[0.548s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.548s] -- Detecting CXX compile features
+[0.549s] -- Detecting CXX compile features - done
+[0.552s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.558s] [33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+[0.558s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[0.559s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[0.559s]   the cmake_policy command to set the policy and suppress this warning.
+[0.559s] 
+[0.559s] Call Stack (most recent call first):
+[0.559s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+[0.559s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+[0.559s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.559s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.559s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.559s]   CMakeLists.txt:19 (find_package)
+[0.560s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.560s] [0m
+[0.581s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.581s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.721s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.770s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.782s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.887s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.940s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.098s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.317s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.343s] -- Found rosidl_generator_dds_idl: 0.7.1 (/opt/ros/foxy/share/rosidl_generator_dds_idl/cmake)
+[1.354s] [33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:40 (find_package):
+[1.354s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.354s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.354s]   the cmake_policy command to set the policy and suppress this warning.
+[1.355s] 
+[1.355s] Call Stack (most recent call first):
+[1.355s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[1.355s]   CMakeLists.txt:28 (rosidl_generate_interfaces)
+[1.355s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.355s] [0m
+[1.376s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.659s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[2.287s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.625s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.636s] [33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[2.637s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.637s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.637s]   the cmake_policy command to set the policy and suppress this warning.
+[2.637s] 
+[2.637s] Call Stack (most recent call first):
+[2.638s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.638s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.638s]   CMakeLists.txt:28 (rosidl_generate_interfaces)
+[2.638s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.638s] [0m
+[2.660s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[2.661s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[2.662s] [33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:45 (find_package):
+[2.662s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.662s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.662s]   the cmake_policy command to set the policy and suppress this warning.
+[2.662s] 
+[2.662s] Call Stack (most recent call first):
+[2.663s]   /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.663s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.663s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.663s]   CMakeLists.txt:28 (rosidl_generate_interfaces)
+[2.663s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.663s] [0m
+[2.684s] [33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:133 (find_package):
+[2.684s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.684s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.684s]   the cmake_policy command to set the policy and suppress this warning.
+[2.685s] 
+[2.685s] Call Stack (most recent call first):
+[2.685s]   /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.685s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.685s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.685s]   CMakeLists.txt:28 (rosidl_generate_interfaces)
+[2.686s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.686s] [0m
+[2.697s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[2.697s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.698s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[2.698s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[2.719s] -- Found PythonExtra: .so  
+[3.001s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.024s] -- Configuring done (3.0s)
+[3.132s] -- Generating done (0.1s)
+[3.161s] -- Build files have been written to: /home/luolixin/unitree_ros2_ws/build/unitree_api
+[3.182s] Invoked command in '/home/luolixin/unitree_ros2_ws/build/unitree_api' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake /home/luolixin/unitree_ros2_ws/src/unitree_ros2/cyclonedds_ws/src/unitree/unitree_api -DCMAKE_INSTALL_PREFIX=/home/luolixin/unitree_ros2_ws/install/unitree_api
+[3.185s] Invoking command in '/home/luolixin/unitree_ros2_ws/build/unitree_api': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake --build /home/luolixin/unitree_ros2_ws/build/unitree_api -- -j40 -l40
+[3.225s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.228s] [  2%] [34m[1mGenerating DDS interfaces[0m
+[3.234s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.413s] [  3%] Built target unitree_api__dds_connext_idl
+[3.533s] [  3%] Built target unitree_api__cpp
+[3.540s] [  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.541s] [  5%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.541s] [  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.546s] [  7%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_generator_c.dir/rosidl_generator_c/unitree_api/msg/detail/request_header__functions.c.o[0m
+[3.546s] [ 12%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_generator_c.dir/rosidl_generator_c/unitree_api/msg/detail/response__functions.c.o[0m
+[3.547s] [ 12%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_generator_c.dir/rosidl_generator_c/unitree_api/msg/detail/request_policy__functions.c.o[0m
+[3.547s] [ 12%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_generator_c.dir/rosidl_generator_c/unitree_api/msg/detail/request_lease__functions.c.o[0m
+[3.547s] [ 12%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_generator_c.dir/rosidl_generator_c/unitree_api/msg/detail/response_status__functions.c.o[0m
+[3.547s] [ 13%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_generator_c.dir/rosidl_generator_c/unitree_api/msg/detail/request_identity__functions.c.o[0m
+[3.547s] [ 14%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_generator_c.dir/rosidl_generator_c/unitree_api/msg/detail/request__functions.c.o[0m
+[3.549s] [ 15%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_generator_c.dir/rosidl_generator_c/unitree_api/msg/detail/response_header__functions.c.o[0m
+[3.591s] [ 17%] [32m[1mLinking C shared library libunitree_api__rosidl_generator_c.so[0m
+[3.630s] [ 17%] Built target unitree_api__rosidl_generator_c
+[3.638s] [ 18%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.641s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.762s] [ 20%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/unitree_api/msg/request__type_support.cpp.o[0m
+[3.763s] [ 22%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/unitree_api/msg/request_lease__type_support.cpp.o[0m
+[3.763s] [ 22%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/unitree_api/msg/request_header__type_support.cpp.o[0m
+[3.764s] [ 26%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/unitree_api/msg/request_identity__type_support.cpp.o[0m
+[3.764s] [ 26%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/unitree_api/msg/response_status__type_support.cpp.o[0m
+[3.764s] [ 26%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/unitree_api/msg/request_policy__type_support.cpp.o[0m
+[3.764s] [ 27%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/unitree_api/msg/response_header__type_support.cpp.o[0m
+[3.765s] [ 28%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/unitree_api/msg/response__type_support.cpp.o[0m
+[3.782s] [ 29%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/unitree_api/msg/detail/request__type_support.cpp.o[0m
+[3.782s] [ 30%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/unitree_api/msg/detail/request_identity__type_support.cpp.o[0m
+[3.783s] [ 31%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/unitree_api/msg/detail/request_header__type_support.cpp.o[0m
+[3.784s] [ 36%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/unitree_api/msg/detail/request_policy__type_support.cpp.o[0m
+[3.784s] [ 36%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/unitree_api/msg/detail/response_status__type_support.cpp.o[0m
+[3.784s] [ 36%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/unitree_api/msg/detail/response_header__type_support.cpp.o[0m
+[3.784s] [ 36%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/unitree_api/msg/detail/response__type_support.cpp.o[0m
+[3.784s] [ 37%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/unitree_api/msg/detail/request_lease__type_support.cpp.o[0m
+[3.822s] [ 38%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/unitree_api/msg/detail/dds_fastrtps/request__type_support.cpp.o[0m
+[3.822s] [ 39%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/unitree_api/msg/detail/dds_fastrtps/request_header__type_support.cpp.o[0m
+[3.823s] [ 42%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/unitree_api/msg/detail/dds_fastrtps/request_lease__type_support.cpp.o[0m
+[3.823s] [ 43%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/unitree_api/msg/detail/dds_fastrtps/request_identity__type_support.cpp.o[0m
+[3.823s] [ 43%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/unitree_api/msg/detail/dds_fastrtps/request_policy__type_support.cpp.o[0m
+[3.824s] [ 44%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/unitree_api/msg/detail/dds_fastrtps/response__type_support.cpp.o[0m
+[3.824s] [ 45%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/unitree_api/msg/detail/dds_fastrtps/response_header__type_support.cpp.o[0m
+[3.824s] [ 46%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/unitree_api/msg/detail/dds_fastrtps/response_status__type_support.cpp.o[0m
+[3.858s] [ 47%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_c.dir/rosidl_typesupport_c/unitree_api/msg/request_header__type_support.cpp.o[0m
+[3.858s] [ 48%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_c.dir/rosidl_typesupport_c/unitree_api/msg/request__type_support.cpp.o[0m
+[3.859s] [ 50%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_c.dir/rosidl_typesupport_c/unitree_api/msg/request_policy__type_support.cpp.o[0m
+[3.860s] [ 51%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_c.dir/rosidl_typesupport_c/unitree_api/msg/response_status__type_support.cpp.o[0m
+[3.860s] [ 55%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_c.dir/rosidl_typesupport_c/unitree_api/msg/response_header__type_support.cpp.o[0m
+[3.860s] [ 55%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_c.dir/rosidl_typesupport_c/unitree_api/msg/response__type_support.cpp.o[0m
+[3.860s] [ 55%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_c.dir/rosidl_typesupport_c/unitree_api/msg/request_lease__type_support.cpp.o[0m
+[3.861s] [ 55%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_c.dir/rosidl_typesupport_c/unitree_api/msg/request_identity__type_support.cpp.o[0m
+[3.900s] [ 56%] [32m[1mLinking CXX shared library libunitree_api__rosidl_typesupport_c.so[0m
+[3.934s] [ 60%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/unitree_api/msg/detail/request_identity__type_support.c.o[0m
+[3.935s] [ 60%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/unitree_api/msg/detail/request__type_support.c.o[0m
+[3.935s] [ 60%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/unitree_api/msg/detail/request_header__type_support.c.o[0m
+[3.935s] [ 63%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/unitree_api/msg/detail/request_lease__type_support.c.o[0m
+[3.935s] [ 63%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/unitree_api/msg/detail/response__type_support.c.o[0m
+[3.935s] [ 63%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/unitree_api/msg/detail/response_header__type_support.c.o[0m
+[3.935s] [ 64%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/unitree_api/msg/detail/request_policy__type_support.c.o[0m
+[3.935s] [ 65%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/unitree_api/msg/detail/response_status__type_support.c.o[0m
+[3.938s] [ 65%] Built target unitree_api__rosidl_typesupport_c
+[3.979s] [ 67%] [32m[1mLinking C shared library libunitree_api__rosidl_typesupport_introspection_c.so[0m
+[4.007s] [ 67%] Built target unitree_api__rosidl_typesupport_introspection_c
+[4.042s] [ 68%] [32m[1mLinking CXX shared library libunitree_api__rosidl_typesupport_cpp.so[0m
+[4.077s] [ 68%] Built target unitree_api__rosidl_typesupport_cpp
+[4.112s] [ 69%] [32m[1mLinking CXX shared library libunitree_api__rosidl_typesupport_introspection_cpp.so[0m
+[4.183s] [ 69%] Built target unitree_api__rosidl_typesupport_introspection_cpp
+[4.236s] [ 70%] [32m[1mLinking CXX shared library libunitree_api__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.318s] [ 70%] Built target unitree_api__rosidl_typesupport_fastrtps_cpp
+[4.329s] [ 71%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.596s] [ 72%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/unitree_api/msg/detail/request_identity__type_support_c.cpp.o[0m
+[4.597s] [ 73%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/unitree_api/msg/detail/request__type_support_c.cpp.o[0m
+[4.597s] [ 75%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/unitree_api/msg/detail/request_header__type_support_c.cpp.o[0m
+[4.598s] [ 77%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/unitree_api/msg/detail/request_policy__type_support_c.cpp.o[0m
+[4.598s] [ 77%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/unitree_api/msg/detail/request_lease__type_support_c.cpp.o[0m
+[4.599s] [ 78%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/unitree_api/msg/detail/response__type_support_c.cpp.o[0m
+[4.600s] [ 79%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/unitree_api/msg/detail/response_header__type_support_c.cpp.o[0m
+[4.601s] [ 80%] [32mBuilding CXX object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/unitree_api/msg/detail/response_status__type_support_c.cpp.o[0m
+[4.838s] [ 81%] [32m[1mLinking CXX shared library libunitree_api__rosidl_typesupport_fastrtps_c.so[0m
+[4.922s] [ 81%] Built target unitree_api__rosidl_typesupport_fastrtps_c
+[4.942s] [ 81%] Built target unitree_api
+[4.962s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.490s] [ 82%] Built target unitree_api__py
+[5.512s] [ 84%] [32mBuilding C object CMakeFiles/unitree_api__python.dir/rosidl_generator_py/unitree_api/msg/_request_header_s.c.o[0m
+[5.512s] [ 85%] [32mBuilding C object CMakeFiles/unitree_api__python.dir/rosidl_generator_py/unitree_api/msg/_request_s.c.o[0m
+[5.513s] [ 87%] [32mBuilding C object CMakeFiles/unitree_api__python.dir/rosidl_generator_py/unitree_api/msg/_request_policy_s.c.o[0m
+[5.513s] [ 88%] [32mBuilding C object CMakeFiles/unitree_api__python.dir/rosidl_generator_py/unitree_api/msg/_response_s.c.o[0m
+[5.513s] [ 87%] [32mBuilding C object CMakeFiles/unitree_api__python.dir/rosidl_generator_py/unitree_api/msg/_request_lease_s.c.o[0m
+[5.513s] [ 89%] [32mBuilding C object CMakeFiles/unitree_api__python.dir/rosidl_generator_py/unitree_api/msg/_request_identity_s.c.o[0m
+[5.513s] [ 90%] [32mBuilding C object CMakeFiles/unitree_api__python.dir/rosidl_generator_py/unitree_api/msg/_response_header_s.c.o[0m
+[5.513s] [ 92%] [32mBuilding C object CMakeFiles/unitree_api__python.dir/rosidl_generator_py/unitree_api/msg/_response_status_s.c.o[0m
+[5.590s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/unitree_api/libunitree_api__python.so[0m
+[5.634s] [ 93%] Built target unitree_api__python
+[5.650s] [ 94%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/unitree_api/_unitree_api_s.ep.rosidl_typesupport_c.c.o[0m
+[5.651s] [ 95%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/unitree_api/_unitree_api_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.652s] [ 96%] [32mBuilding C object CMakeFiles/unitree_api__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/unitree_api/_unitree_api_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.730s] [ 97%] [32m[1mLinking CXX shared library rosidl_generator_py/unitree_api/unitree_api_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.731s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/unitree_api/unitree_api_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.732s] [100%] [32m[1mLinking C shared library rosidl_generator_py/unitree_api/unitree_api_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[5.764s] [100%] Built target unitree_api__rosidl_typesupport_introspection_c__pyext
+[5.766s] [100%] Built target unitree_api__rosidl_typesupport_c__pyext
+[5.787s] [100%] Built target unitree_api__rosidl_typesupport_fastrtps_c__pyext
+[5.799s] Invoked command in '/home/luolixin/unitree_ros2_ws/build/unitree_api' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake --build /home/luolixin/unitree_ros2_ws/build/unitree_api -- -j40 -l40
+[5.806s] Invoking command in '/home/luolixin/unitree_ros2_ws/build/unitree_api': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake --install /home/luolixin/unitree_ros2_ws/build/unitree_api
+[5.813s] -- Install configuration: ""
+[5.813s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/ament_index/resource_index/rosidl_interfaces/unitree_api
+[5.813s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api
+[5.814s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg
+[5.814s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/response_header.h
+[5.814s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/response.h
+[5.814s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail
+[5.815s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_header__type_support.h
+[5.815s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_identity__functions.h
+[5.815s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_status__functions.h
+[5.815s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_header__functions.c
+[5.815s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request__functions.c
+[5.815s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_lease__functions.c
+[5.815s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request__struct.h
+[5.815s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_identity__struct.h
+[5.816s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_identity__functions.c
+[5.816s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_header__functions.h
+[5.816s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_policy__struct.h
+[5.816s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_header__struct.h
+[5.817s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_policy__functions.h
+[5.817s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_lease__struct.h
+[5.817s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_status__type_support.h
+[5.817s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request__functions.h
+[5.817s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response__functions.h
+[5.817s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_header__functions.c
+[5.817s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_lease__type_support.h
+[5.817s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_status__struct.h
+[5.818s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response__struct.h
+[5.818s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_identity__type_support.h
+[5.818s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_header__type_support.h
+[5.818s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response__type_support.h
+[5.818s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response__functions.c
+[5.818s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_lease__functions.h
+[5.818s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request__type_support.h
+[5.818s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_policy__type_support.h
+[5.818s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_header__functions.h
+[5.818s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_status__functions.c
+[5.818s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_header__struct.h
+[5.818s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_policy__functions.c
+[5.819s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/request.h
+[5.819s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/response_status.h
+[5.819s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/request_header.h
+[5.819s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/request_policy.h
+[5.819s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/request_lease.h
+[5.819s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/rosidl_generator_c__visibility_control.h
+[5.819s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/request_identity.h
+[5.819s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/environment/library_path.sh
+[5.819s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/environment/library_path.dsv
+[5.819s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__rosidl_generator_c.so
+[5.819s] -- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__rosidl_generator_c.so" to ""
+[5.820s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api
+[5.820s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg
+[5.820s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.820s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail
+[5.820s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_status__rosidl_typesupport_fastrtps_c.h
+[5.820s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_header__rosidl_typesupport_fastrtps_c.h
+[5.820s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request__rosidl_typesupport_fastrtps_c.h
+[5.820s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_header__rosidl_typesupport_fastrtps_c.h
+[5.820s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response__rosidl_typesupport_fastrtps_c.h
+[5.820s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_identity__rosidl_typesupport_fastrtps_c.h
+[5.820s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_policy__rosidl_typesupport_fastrtps_c.h
+[5.820s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_lease__rosidl_typesupport_fastrtps_c.h
+[5.821s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__rosidl_typesupport_fastrtps_c.so
+[5.821s] -- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__rosidl_typesupport_fastrtps_c.so" to ""
+[5.821s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api
+[5.821s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg
+[5.821s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail
+[5.821s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/dds_fastrtps
+[5.821s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request__rosidl_typesupport_fastrtps_cpp.hpp
+[5.822s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_header__rosidl_typesupport_fastrtps_cpp.hpp
+[5.822s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_policy__rosidl_typesupport_fastrtps_cpp.hpp
+[5.822s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_header__rosidl_typesupport_fastrtps_cpp.hpp
+[5.822s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response__rosidl_typesupport_fastrtps_cpp.hpp
+[5.822s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_lease__rosidl_typesupport_fastrtps_cpp.hpp
+[5.822s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_identity__rosidl_typesupport_fastrtps_cpp.hpp
+[5.822s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_status__rosidl_typesupport_fastrtps_cpp.hpp
+[5.822s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.822s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__rosidl_typesupport_fastrtps_cpp.so
+[5.823s] -- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.823s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api
+[5.823s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg
+[5.823s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail
+[5.823s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_lease__rosidl_typesupport_introspection_c.h
+[5.823s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response__type_support.c
+[5.823s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_identity__rosidl_typesupport_introspection_c.h
+[5.823s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_header__type_support.c
+[5.823s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_status__type_support.c
+[5.824s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_header__rosidl_typesupport_introspection_c.h
+[5.824s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request__rosidl_typesupport_introspection_c.h
+[5.824s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_policy__rosidl_typesupport_introspection_c.h
+[5.824s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response__rosidl_typesupport_introspection_c.h
+[5.824s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_header__type_support.c
+[5.824s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_lease__type_support.c
+[5.824s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_policy__type_support.c
+[5.824s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_header__rosidl_typesupport_introspection_c.h
+[5.824s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_status__rosidl_typesupport_introspection_c.h
+[5.824s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request__type_support.c
+[5.824s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_identity__type_support.c
+[5.824s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.824s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__rosidl_typesupport_introspection_c.so
+[5.824s] -- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__rosidl_typesupport_introspection_c.so" to ""
+[5.824s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__rosidl_typesupport_c.so
+[5.824s] -- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__rosidl_typesupport_c.so" to ""
+[5.825s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api
+[5.825s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg
+[5.825s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request__traits.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_header__builder.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request__struct.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_lease__struct.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_header__builder.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_header__struct.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_header__struct.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_lease__traits.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_header__type_support.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_header__type_support.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_lease__builder.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_identity__builder.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request__type_support.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_status__traits.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_header__traits.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_identity__type_support.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request__builder.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response__builder.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response__type_support.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_lease__type_support.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_status__builder.hpp
+[5.825s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_policy__traits.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_policy__struct.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_policy__type_support.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_status__struct.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_header__traits.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_status__type_support.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_identity__struct.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response__traits.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response__struct.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_identity__traits.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_policy__builder.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/request_lease.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/request_header.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/request.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/response.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/request_policy.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/response_header.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/request_identity.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/response_status.hpp
+[5.826s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api
+[5.826s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg
+[5.826s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response__rosidl_typesupport_introspection_cpp.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request__type_support.cpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_header__rosidl_typesupport_introspection_cpp.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_lease__type_support.cpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_header__type_support.cpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_header__rosidl_typesupport_introspection_cpp.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request__rosidl_typesupport_introspection_cpp.hpp
+[5.826s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response__type_support.cpp
+[5.827s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_identity__rosidl_typesupport_introspection_cpp.hpp
+[5.827s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_policy__rosidl_typesupport_introspection_cpp.hpp
+[5.827s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_policy__type_support.cpp
+[5.827s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_status__type_support.cpp
+[5.827s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_header__type_support.cpp
+[5.827s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_lease__rosidl_typesupport_introspection_cpp.hpp
+[5.827s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/request_identity__type_support.cpp
+[5.827s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/include/unitree_api/msg/detail/response_status__rosidl_typesupport_introspection_cpp.hpp
+[5.827s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__rosidl_typesupport_introspection_cpp.so
+[5.827s] -- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__rosidl_typesupport_introspection_cpp.so" to ""
+[5.827s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__rosidl_typesupport_cpp.so
+[5.827s] -- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__rosidl_typesupport_cpp.so" to ""
+[5.827s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/environment/pythonpath.sh
+[5.827s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/environment/pythonpath.dsv
+[5.827s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/__init__.py
+[5.852s] Compiling '/home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/__init__.py'...
+[5.856s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg
+[5.856s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_response_s.c
+[5.856s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_request_lease.py
+[5.857s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_request_s.c
+[5.857s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_request_header.py
+[5.857s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/__init__.py
+[5.857s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_request_header_s.c
+[5.858s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_response_status_s.c
+[5.858s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_request_policy.py
+[5.858s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_response_header_s.c
+[5.858s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_request_lease_s.c
+[5.859s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_request.py
+[5.859s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_request_identity.py
+[5.859s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_response.py
+[5.859s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_request_policy_s.c
+[5.859s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_response_status.py
+[5.859s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_request_identity_s.c
+[5.859s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/msg/_response_header.py
+[5.860s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/unitree_api_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[5.860s] -- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/unitree_api_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[5.860s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/unitree_api_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[5.860s] -- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/unitree_api_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[5.860s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/unitree_api_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[5.860s] -- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages/unitree_api/unitree_api_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[5.860s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__python.so
+[5.860s] -- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/unitree_api/lib/libunitree_api__python.so" to ""
+[5.860s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/Request.idl
+[5.860s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/RequestHeader.idl
+[5.861s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/RequestIdentity.idl
+[5.861s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/RequestLease.idl
+[5.861s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/RequestPolicy.idl
+[5.861s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/Response.idl
+[5.861s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/ResponseHeader.idl
+[5.861s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/ResponseStatus.idl
+[5.861s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/Request.msg
+[5.861s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/RequestHeader.msg
+[5.861s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/RequestIdentity.msg
+[5.861s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/RequestLease.msg
+[5.862s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/RequestPolicy.msg
+[5.862s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/Response.msg
+[5.862s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/ResponseHeader.msg
+[5.862s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/ResponseStatus.msg
+[5.862s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/dds_connext
+[5.862s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/dds_connext/RequestIdentity_.idl
+[5.862s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/dds_connext/ResponseStatus_.idl
+[5.862s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/dds_connext/Response_.idl
+[5.862s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/dds_connext/RequestHeader_.idl
+[5.863s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/dds_connext/RequestPolicy_.idl
+[5.863s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/dds_connext/RequestLease_.idl
+[5.863s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/dds_connext/Request_.idl
+[5.863s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/msg/dds_connext/ResponseHeader_.idl
+[5.863s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/ament_index/resource_index/package_run_dependencies/unitree_api
+[5.863s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/ament_index/resource_index/parent_prefix_path/unitree_api
+[5.863s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/environment/ament_prefix_path.sh
+[5.863s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/environment/ament_prefix_path.dsv
+[5.863s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/environment/path.sh
+[5.863s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/environment/path.dsv
+[5.863s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/local_setup.bash
+[5.864s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/local_setup.sh
+[5.864s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/local_setup.zsh
+[5.864s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/local_setup.dsv
+[5.864s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/package.dsv
+[5.864s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/ament_index/resource_index/packages/unitree_api
+[5.864s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/unitree_api__rosidl_generator_cExport.cmake
+[5.864s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/unitree_api__rosidl_generator_cExport-noconfig.cmake
+[5.864s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/unitree_api__rosidl_typesupport_introspection_cExport.cmake
+[5.864s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/unitree_api__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.865s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/unitree_api__rosidl_typesupport_cExport.cmake
+[5.865s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/unitree_api__rosidl_typesupport_cExport-noconfig.cmake
+[5.865s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/unitree_api__rosidl_generator_cppExport.cmake
+[5.865s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/unitree_api__rosidl_typesupport_introspection_cppExport.cmake
+[5.865s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/unitree_api__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.865s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/unitree_api__rosidl_typesupport_cppExport.cmake
+[5.865s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/unitree_api__rosidl_typesupport_cppExport-noconfig.cmake
+[5.865s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/rosidl_cmake-extras.cmake
+[5.866s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.866s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/ament_cmake_export_libraries-extras.cmake
+[5.866s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/ament_cmake_export_targets-extras.cmake
+[5.866s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.866s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.866s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.866s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/unitree_apiConfig.cmake
+[5.866s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/cmake/unitree_apiConfig-version.cmake
+[5.866s] -- Installing: /home/luolixin/unitree_ros2_ws/install/unitree_api/share/unitree_api/package.xml
+[5.870s] Invoked command in '/home/luolixin/unitree_ros2_ws/build/unitree_api' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake --install /home/luolixin/unitree_ros2_ws/build/unitree_api

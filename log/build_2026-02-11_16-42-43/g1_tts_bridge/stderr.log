@@ -1,0 +1,126 @@
+[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+  CMakeLists.txt:14 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:40 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+  CMakeLists.txt:32 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:32 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:45 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+  /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:32 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at /opt/ros/foxy/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:133 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/foxy/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+  /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:32 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+In file included from [01m[K/opt/unitree_robotics/include/unitree/common/any.hpp:4[m[K,
+                 from [01m[K/opt/unitree_robotics/include/unitree/common/json/json.hpp:4[m[K,
+                 from [01m[K/opt/unitree_robotics/include/unitree/common/json/jsonize.hpp:13[m[K,
+                 from [01m[K/opt/unitree_robotics/include/unitree/robot/internal/internal_api.hpp:5[m[K,
+                 from [01m[K/opt/unitree_robotics/include/unitree/robot/internal/internal.hpp:4[m[K,
+                 from [01m[K/opt/unitree_robotics/include/unitree/robot/future/request_future.hpp:5[m[K,
+                 from [01m[K/opt/unitree_robotics/include/unitree/robot/client/client_stub.hpp:4[m[K,
+                 from [01m[K/opt/unitree_robotics/include/unitree/robot/client/client_base.hpp:4[m[K,
+                 from [01m[K/opt/unitree_robotics/include/unitree/robot/client/client.hpp:4[m[K,
+                 from [01m[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_client.hpp:5[m[K,
+                 from [01m[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:10[m[K:
+[01m[K/opt/unitree_robotics/include/unitree/common/exception.hpp:123:37:[m[K [01;35m[Kwarning: [m[KISO C++ does not permit named variadic macros [[01;35m[K-Wvariadic-macros[m[K]
+  123 | #define UT_THROW(ExceptionType, args[01;35m[K...[m[K)    \
+      |                                     [01;35m[K^~~[m[K
+[01m[K/opt/unitree_robotics/include/unitree/common/exception.hpp:131:51:[m[K [01;35m[Kwarning: [m[KISO C++ does not permit named variadic macros [[01;35m[K-Wvariadic-macros[m[K]
+  131 | #define UT_THROW_IF(condition, ExceptionType, args[01;35m[K...[m[K)  \
+      |                                                   [01;35m[K^~~[m[K
+In file included from [01m[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_client.hpp:8[m[K,
+                 from [01m[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:10[m[K:
+[01m[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:[m[K In member function ‘[01m[Kvirtual void unitree::robot::g1::TtsMakerParameter::fromJson(unitree::common::JsonMap&)[m[K’:
+[01m[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:30:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kjson[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   30 |   void fromJson([01;35m[Kcommon::JsonMap &json[m[K) {}
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:[m[K In member function ‘[01m[Kvirtual void unitree::robot::g1::PlayStreamParameter::fromJson(unitree::common::JsonMap&)[m[K’:
+[01m[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:48:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kjson[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   48 |   void fromJson([01;35m[Kcommon::JsonMap &json[m[K) {}
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:[m[K In member function ‘[01m[Kvirtual void unitree::robot::g1::PlayStopParameter::fromJson(unitree::common::JsonMap&)[m[K’:
+[01m[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:64:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kjson[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   64 |   void fromJson([01;35m[Kcommon::JsonMap &json[m[K) {}
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:[m[K In member function ‘[01m[Kvirtual void unitree::robot::g1::LedControlParameter::fromJson(unitree::common::JsonMap&)[m[K’:
+[01m[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:78:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kjson[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   78 |   void fromJson([01;35m[Kcommon::JsonMap &json[m[K) {}
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:[m[K At global scope:
+[01m[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:89:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   89 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:16:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   16 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:[m[K In member function ‘[01m[Kvoid G1TtsService::handle_tts_request(std::shared_ptr<g1_tts_bridge::srv::TTS_Request_<std::allocator<void> > >, std::shared_ptr<g1_tts_bridge::srv::TTS_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:75:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[Kcatch[m[K’ before ‘[01m[K}[m[K’ token
+   75 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+[01m[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:75:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[K}[m[K’ token
+   75 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+      | [32m[K([m[K
+[01m[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:75:1:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[K}[m[K’ token
+[01m[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:74:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K}[m[K’ token
+   74 |   }
+      |    [01;31m[K^[m[K
+      |    [32m[K)[m[K
+   75 | [32m[K}[m[K;
+      | [32m[K~[m[K   
+[01m[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:75:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K}[m[K’ token
+   75 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+[01m[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:[m[K At global scope:
+[01m[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:89:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+   89 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/g1_tts_service.dir/build.make:76: CMakeFiles/g1_tts_service.dir/src/g1_tts_service.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:545: CMakeFiles/g1_tts_service.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

@@ -1,0 +1,22 @@
+[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+  CMakeLists.txt:33 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+In file included from [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:11[m[K:
+[01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/include/common/ut_errror.hpp:13:59:[m[K [01;35m[Kwarning: [m[Kbackslash-newline at end of file
+   13 | #define UT_PRINT_ERR(code, error)                         \
+      |                                                            
+In file included from [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:12[m[K:
+[01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/include/g1/g1_arm_action_client.hpp:45:51:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+   45 |     "sport_services_interface#Expert%20interface")[01;35m[K;[m[K
+      |                                                   [01;35m[K^[m[K

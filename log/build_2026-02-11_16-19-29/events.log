@@ -1,0 +1,85 @@
+[0.000000] (-) TimerEvent: {}
+[0.000595] (-) JobUnselected: {'identifier': 'cyclonedds'}
+[0.000876] (-) JobUnselected: {'identifier': 'my_g1_audio'}
+[0.001041] (-) JobUnselected: {'identifier': 'rmw_cyclonedds_cpp'}
+[0.001147] (-) JobUnselected: {'identifier': 'unitree_api'}
+[0.001196] (-) JobUnselected: {'identifier': 'unitree_go'}
+[0.001218] (-) JobUnselected: {'identifier': 'unitree_hg'}
+[0.001239] (-) JobUnselected: {'identifier': 'unitree_ros2_example'}
+[0.001266] (g1_tts_bridge) JobQueued: {'identifier': 'g1_tts_bridge', 'dependencies': OrderedDict()}
+[0.001294] (g1_tts_bridge) JobStarted: {'identifier': 'g1_tts_bridge'}
+[0.009643] (g1_tts_bridge) JobProgress: {'identifier': 'g1_tts_bridge', 'progress': 'cmake'}
+[0.010224] (g1_tts_bridge) JobProgress: {'identifier': 'g1_tts_bridge', 'progress': 'build'}
+[0.010971] (g1_tts_bridge) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge', '--', '-j40', '-l40'], 'cwd': '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', ''), ('USER', 'luolixin'), ('SSH_CLIENT', '10.133.59.101 51686 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/luolixin'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/luolixin/unitree_ros2_ws'), ('TERM_PROGRAM_VERSION', '1.109.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1002/vscode-ipc-6c1aeb56-b3b9-451b-bf62-6878f774b6ea.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/extensions/git/dist/askpass-main.js'), ('HF_ENDPOINT', 'https://hf-mirror.com'), ('VSCODE_GIT_ASKPASS_NODE', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/luolixin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/luolixin/miniconda3'), ('LOGNAME', 'luolixin'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '313'), ('_CE_CONDA', ''), ('PATH', '/opt/ros/foxy/bin:/home/luolixin/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/luolixin/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/bin/remote-cli:/home/luolixin/miniconda3/condabin:/opt/ollama/bin:/opt/ollama/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/luolixin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/luolixin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-498a64d524f65990.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/luolixin/.vscode-server/data/User/workspaceStorage/f7ae3bb4047145a8e0ecc792a0be8386/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1002/vscode-git-a19bb0aba0.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/luolixin/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('OLLAMA_HOME', '/opt/ollama'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', ''), ('_CONDA_EXE', '/home/luolixin/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('CONDA_EXE', '/home/luolixin/miniconda3/bin/conda'), ('SSH_CONNECTION', '10.133.59.101 51686 10.133.56.239 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('CONDA_PREFIX', ''), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.058180] (g1_tts_bridge) StdoutLine: {'line': b'[  3%] Built target g1_tts_bridge__cpp\n'}
+[0.065441] (g1_tts_bridge) StdoutLine: {'line': b'[ 12%] Built target g1_tts_bridge__rosidl_generator_c\n'}
+[0.078669] (g1_tts_bridge) StdoutLine: {'line': b'[ 27%] Built target g1_tts_bridge__rosidl_typesupport_fastrtps_cpp\n'}
+[0.079116] (g1_tts_bridge) StdoutLine: {'line': b'[ 30%] Built target g1_tts_bridge__rosidl_typesupport_introspection_cpp\n'}
+[0.079324] (g1_tts_bridge) StdoutLine: {'line': b'[ 39%] Built target g1_tts_bridge__rosidl_typesupport_cpp\n'}
+[0.082648] (g1_tts_bridge) StdoutLine: {'line': b'[ 48%] Built target g1_tts_bridge__rosidl_typesupport_introspection_c\n'}
+[0.084853] (g1_tts_bridge) StdoutLine: {'line': b'[ 57%] Built target g1_tts_bridge__rosidl_typesupport_c\n'}
+[0.097584] (g1_tts_bridge) StdoutLine: {'line': b'[ 66%] Built target g1_tts_bridge__rosidl_typesupport_fastrtps_c\n'}
+[0.099304] (-) TimerEvent: {}
+[0.112704] (g1_tts_bridge) StdoutLine: {'line': b'[ 66%] Built target g1_tts_bridge\n'}
+[0.131374] (g1_tts_bridge) StdoutLine: {'line': b'[ 69%] Built target g1_tts_bridge__py\n'}
+[0.134024] (g1_tts_bridge) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/g1_tts_service.dir/src/g1_tts_service.cpp.o\x1b[0m\n'}
+[0.147283] (g1_tts_bridge) StdoutLine: {'line': b'[ 78%] Built target g1_tts_bridge__python\n'}
+[0.162800] (g1_tts_bridge) StdoutLine: {'line': b'[ 84%] Built target g1_tts_bridge__rosidl_typesupport_introspection_c__pyext\n'}
+[0.164899] (g1_tts_bridge) StdoutLine: {'line': b'[ 90%] Built target g1_tts_bridge__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.167216] (g1_tts_bridge) StdoutLine: {'line': b'[ 96%] Built target g1_tts_bridge__rosidl_typesupport_c__pyext\n'}
+[0.199400] (-) TimerEvent: {}
+[0.299693] (-) TimerEvent: {}
+[0.400008] (-) TimerEvent: {}
+[0.500397] (-) TimerEvent: {}
+[0.600823] (-) TimerEvent: {}
+[0.701265] (-) TimerEvent: {}
+[0.801731] (-) TimerEvent: {}
+[0.902209] (-) TimerEvent: {}
+[0.960660] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:22:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kunitree\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.961025] (g1_tts_bridge) StderrLine: {'line': b'   22 |   explicit G1TtsService(std::shared_ptr<\x1b[01;31m\x1b[Kunitree\x1b[m\x1b[K::ros2::g1::AudioClient> audio_client)\n'}
+[0.961099] (g1_tts_bridge) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[0.961151] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:22:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.961200] (g1_tts_bridge) StderrLine: {'line': b'   22 |   explicit G1TtsService(std::shared_ptr<unitree::ros2::g1::AudioClient\x1b[01;31m\x1b[K>\x1b[m\x1b[K audio_client)\n'}
+[0.961251] (g1_tts_bridge) StderrLine: {'line': b'      |                                                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.962538] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:36:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kunitree\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.962751] (g1_tts_bridge) StderrLine: {'line': b'   36 |   std::shared_ptr<\x1b[01;31m\x1b[Kunitree\x1b[m\x1b[K::ros2::g1::AudioClient> audio_client_;\n'}
+[0.962822] (g1_tts_bridge) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[0.962879] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:36:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.962935] (g1_tts_bridge) StderrLine: {'line': b'   36 |   std::shared_ptr<unitree::ros2::g1::AudioClient\x1b[01;31m\x1b[K>\x1b[m\x1b[K audio_client_;\n'}
+[0.962991] (g1_tts_bridge) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.975924] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid G1TtsService::handle_tts_request(std::shared_ptr<g1_tts_bridge::srv::TTS_Request_<std::allocator<void> > >, std::shared_ptr<g1_tts_bridge::srv::TTS_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.976320] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:47:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid operands of types \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::nullptr_t\x1b[m\x1b[K\xe2\x80\x99 to binary \xe2\x80\x98\x1b[01m\x1b[Koperator==\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.976410] (g1_tts_bridge) StderrLine: {'line': b'   47 |     if (\x1b[01;31m\x1b[Kaudio_client_ == nullptr\x1b[m\x1b[K) {\n'}
+[0.976474] (g1_tts_bridge) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.976540] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:57:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[0.976600] (g1_tts_bridge) StderrLine: {'line': b'   57 |       int32_t ret = audio_client_\x1b[01;31m\x1b[K->\x1b[m\x1b[KTtsMaker(text_to_speak, 0);\n'}
+[0.976654] (g1_tts_bridge) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.978637] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.978973] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:83:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kunitree\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.979062] (g1_tts_bridge) StderrLine: {'line': b'   83 |     auto unitree_node = std::make_shared<\x1b[01;31m\x1b[Kunitree\x1b[m\x1b[K::ros2::g1::AudioClient>();\n'}
+[0.979125] (g1_tts_bridge) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[0.979188] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:83:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[0.979245] (g1_tts_bridge) StderrLine: {'line': b'   83 |     auto unitree_node = std::\x1b[01;31m\x1b[Kmake_shared<unitree::ros2::g1::AudioClient>\x1b[m\x1b[K();\n'}
+[0.979297] (g1_tts_bridge) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.979353] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:83:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.979418] (g1_tts_bridge) StderrLine: {'line': b'   83 |     auto unitree_node = std::make_shared<unitree::ros2::g1::AudioClient>(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[0.979474] (g1_tts_bridge) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.979529] (g1_tts_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:81\x1b[m\x1b[K,\n'}
+[0.979586] (g1_tts_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:1\x1b[m\x1b[K:\n'}
+[0.979645] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:714:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.979704] (g1_tts_bridge) StderrLine: {'line': b'  714 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[0.979757] (g1_tts_bridge) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.979809] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:714:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[0.979870] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:83:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.979926] (g1_tts_bridge) StderrLine: {'line': b'   83 |     auto unitree_node = std::make_shared<unitree::ros2::g1::AudioClient>(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[0.979977] (g1_tts_bridge) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.002300] (-) TimerEvent: {}
+[1.102653] (-) TimerEvent: {}
+[1.203080] (-) TimerEvent: {}
+[1.271232] (g1_tts_bridge) StderrLine: {'line': b'make[2]: *** [CMakeFiles/g1_tts_service.dir/build.make:76: CMakeFiles/g1_tts_service.dir/src/g1_tts_service.cpp.o] Error 1\n'}
+[1.271849] (g1_tts_bridge) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:545: CMakeFiles/g1_tts_service.dir/all] Error 2\n'}
+[1.272368] (g1_tts_bridge) StderrLine: {'line': b'make: *** [Makefile:146: all] Error 2\n'}
+[1.276128] (g1_tts_bridge) CommandEnded: {'returncode': 2}
+[1.298232] (g1_tts_bridge) JobEnded: {'identifier': 'g1_tts_bridge', 'rc': 2}
+[1.303146] (-) TimerEvent: {}
+[1.309347] (-) EventReactorShutdown: {}

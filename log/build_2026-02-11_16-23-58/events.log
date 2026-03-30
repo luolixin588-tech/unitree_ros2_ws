@@ -1,0 +1,221 @@
+[0.000000] (-) TimerEvent: {}
+[0.000444] (-) JobUnselected: {'identifier': 'cyclonedds'}
+[0.000554] (-) JobUnselected: {'identifier': 'my_g1_audio'}
+[0.000630] (-) JobUnselected: {'identifier': 'rmw_cyclonedds_cpp'}
+[0.000786] (-) JobUnselected: {'identifier': 'unitree_api'}
+[0.000848] (-) JobUnselected: {'identifier': 'unitree_go'}
+[0.001004] (-) JobUnselected: {'identifier': 'unitree_hg'}
+[0.001050] (-) JobUnselected: {'identifier': 'unitree_ros2_example'}
+[0.001106] (g1_tts_bridge) JobQueued: {'identifier': 'g1_tts_bridge', 'dependencies': OrderedDict()}
+[0.001242] (g1_tts_bridge) JobStarted: {'identifier': 'g1_tts_bridge'}
+[0.011359] (g1_tts_bridge) JobProgress: {'identifier': 'g1_tts_bridge', 'progress': 'cmake'}
+[0.011935] (g1_tts_bridge) JobProgress: {'identifier': 'g1_tts_bridge', 'progress': 'build'}
+[0.012671] (g1_tts_bridge) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge', '--', '-j40', '-l40'], 'cwd': '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', ''), ('USER', 'luolixin'), ('SSH_CLIENT', '10.133.59.101 51686 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/luolixin'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/luolixin/unitree_ros2_ws'), ('TERM_PROGRAM_VERSION', '1.109.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1002/vscode-ipc-6c1aeb56-b3b9-451b-bf62-6878f774b6ea.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/extensions/git/dist/askpass-main.js'), ('HF_ENDPOINT', 'https://hf-mirror.com'), ('VSCODE_GIT_ASKPASS_NODE', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/luolixin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/luolixin/miniconda3'), ('LOGNAME', 'luolixin'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '313'), ('_CE_CONDA', ''), ('PATH', '/opt/ros/foxy/bin:/home/luolixin/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/luolixin/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/bin/remote-cli:/home/luolixin/miniconda3/condabin:/opt/ollama/bin:/opt/ollama/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/luolixin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/luolixin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-498a64d524f65990.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/luolixin/.vscode-server/data/User/workspaceStorage/f7ae3bb4047145a8e0ecc792a0be8386/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1002/vscode-git-a19bb0aba0.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/luolixin/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('OLLAMA_HOME', '/opt/ollama'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', ''), ('_CONDA_EXE', '/home/luolixin/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('CONDA_EXE', '/home/luolixin/miniconda3/bin/conda'), ('SSH_CONNECTION', '10.133.59.101 51686 10.133.56.239 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('CONDA_PREFIX', ''), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.059413] (g1_tts_bridge) StdoutLine: {'line': b'[  3%] Built target g1_tts_bridge__cpp\n'}
+[0.060195] (g1_tts_bridge) StdoutLine: {'line': b'[ 12%] Built target g1_tts_bridge__rosidl_generator_c\n'}
+[0.072228] (g1_tts_bridge) StdoutLine: {'line': b'[ 21%] Built target g1_tts_bridge__rosidl_typesupport_c\n'}
+[0.074478] (g1_tts_bridge) StdoutLine: {'line': b'[ 30%] Built target g1_tts_bridge__rosidl_typesupport_introspection_cpp\n'}
+[0.076860] (g1_tts_bridge) StdoutLine: {'line': b'[ 39%] Built target g1_tts_bridge__rosidl_typesupport_fastrtps_cpp\n'}
+[0.077358] (g1_tts_bridge) StdoutLine: {'line': b'[ 48%] Built target g1_tts_bridge__rosidl_typesupport_introspection_c\n'}
+[0.080052] (g1_tts_bridge) StdoutLine: {'line': b'[ 57%] Built target g1_tts_bridge__rosidl_typesupport_cpp\n'}
+[0.096655] (g1_tts_bridge) StdoutLine: {'line': b'[ 66%] Built target g1_tts_bridge__rosidl_typesupport_fastrtps_c\n'}
+[0.098865] (-) TimerEvent: {}
+[0.109480] (g1_tts_bridge) StdoutLine: {'line': b'[ 66%] Built target g1_tts_bridge\n'}
+[0.122277] (g1_tts_bridge) StdoutLine: {'line': b'[ 69%] Built target g1_tts_bridge__py\n'}
+[0.134198] (g1_tts_bridge) StdoutLine: {'line': b'[ 75%] Built target g1_tts_bridge__python\n'}
+[0.142508] (g1_tts_bridge) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/g1_tts_service.dir/src/g1_tts_service.cpp.o\x1b[0m\n'}
+[0.150123] (g1_tts_bridge) StdoutLine: {'line': b'[ 84%] Built target g1_tts_bridge__rosidl_typesupport_introspection_c__pyext\n'}
+[0.150723] (g1_tts_bridge) StdoutLine: {'line': b'[ 90%] Built target g1_tts_bridge__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.155259] (g1_tts_bridge) StdoutLine: {'line': b'[ 96%] Built target g1_tts_bridge__rosidl_typesupport_c__pyext\n'}
+[0.199022] (-) TimerEvent: {}
+[0.230253] (g1_tts_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/common/any.hpp:4\x1b[m\x1b[K,\n'}
+[0.230828] (g1_tts_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/common/json/json.hpp:4\x1b[m\x1b[K,\n'}
+[0.231049] (g1_tts_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/common/json/jsonize.hpp:13\x1b[m\x1b[K,\n'}
+[0.231220] (g1_tts_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/internal/internal_api.hpp:5\x1b[m\x1b[K,\n'}
+[0.231383] (g1_tts_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/internal/internal.hpp:4\x1b[m\x1b[K,\n'}
+[0.231529] (g1_tts_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/future/request_future.hpp:5\x1b[m\x1b[K,\n'}
+[0.231674] (g1_tts_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/client/client_stub.hpp:4\x1b[m\x1b[K,\n'}
+[0.231817] (g1_tts_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/client/client_base.hpp:4\x1b[m\x1b[K,\n'}
+[0.231963] (g1_tts_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/client/client.hpp:4\x1b[m\x1b[K,\n'}
+[0.232104] (g1_tts_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_client.hpp:5\x1b[m\x1b[K,\n'}
+[0.232250] (g1_tts_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:10\x1b[m\x1b[K:\n'}
+[0.232399] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/common/exception.hpp:123:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ does not permit named variadic macros [\x1b[01;35m\x1b[K-Wvariadic-macros\x1b[m\x1b[K]\n'}
+[0.232565] (g1_tts_bridge) StderrLine: {'line': b'  123 | #define UT_THROW(ExceptionType, args\x1b[01;35m\x1b[K...\x1b[m\x1b[K)    \\\n'}
+[0.232708] (g1_tts_bridge) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.232868] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/common/exception.hpp:131:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ does not permit named variadic macros [\x1b[01;35m\x1b[K-Wvariadic-macros\x1b[m\x1b[K]\n'}
+[0.233044] (g1_tts_bridge) StderrLine: {'line': b'  131 | #define UT_THROW_IF(condition, ExceptionType, args\x1b[01;35m\x1b[K...\x1b[m\x1b[K)  \\\n'}
+[0.233192] (g1_tts_bridge) StderrLine: {'line': b'      |                                                   \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.299187] (-) TimerEvent: {}
+[0.399836] (-) TimerEvent: {}
+[0.500523] (-) TimerEvent: {}
+[0.601186] (-) TimerEvent: {}
+[0.701779] (-) TimerEvent: {}
+[0.802465] (-) TimerEvent: {}
+[0.902998] (-) TimerEvent: {}
+[1.003557] (-) TimerEvent: {}
+[1.104156] (-) TimerEvent: {}
+[1.204611] (-) TimerEvent: {}
+[1.305065] (-) TimerEvent: {}
+[1.405531] (-) TimerEvent: {}
+[1.506189] (-) TimerEvent: {}
+[1.606934] (-) TimerEvent: {}
+[1.684777] (g1_tts_bridge) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_client.hpp:8\x1b[m\x1b[K,\n'}
+[1.685470] (g1_tts_bridge) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/g1_tts_bridge/src/g1_tts_service.cpp:10\x1b[m\x1b[K:\n'}
+[1.685683] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void unitree::robot::g1::TtsMakerParameter::fromJson(unitree::common::JsonMap&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.685871] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:30:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kjson\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.685977] (g1_tts_bridge) StderrLine: {'line': b'   30 |   void fromJson(\x1b[01;35m\x1b[Kcommon::JsonMap &json\x1b[m\x1b[K) {}\n'}
+[1.686045] (g1_tts_bridge) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[1.686105] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void unitree::robot::g1::PlayStreamParameter::fromJson(unitree::common::JsonMap&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.686151] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:48:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kjson\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.686194] (g1_tts_bridge) StderrLine: {'line': b'   48 |   void fromJson(\x1b[01;35m\x1b[Kcommon::JsonMap &json\x1b[m\x1b[K) {}\n'}
+[1.686235] (g1_tts_bridge) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[1.686283] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void unitree::robot::g1::PlayStopParameter::fromJson(unitree::common::JsonMap&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.686327] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:64:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kjson\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.686367] (g1_tts_bridge) StderrLine: {'line': b'   64 |   void fromJson(\x1b[01;35m\x1b[Kcommon::JsonMap &json\x1b[m\x1b[K) {}\n'}
+[1.686416] (g1_tts_bridge) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[1.686455] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void unitree::robot::g1::LedControlParameter::fromJson(unitree::common::JsonMap&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.686495] (g1_tts_bridge) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/unitree_robotics/include/unitree/robot/g1/audio/g1_audio_api.hpp:78:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kjson\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[1.686536] (g1_tts_bridge) StderrLine: {'line': b'   78 |   void fromJson(\x1b[01;35m\x1b[Kcommon::JsonMap &json\x1b[m\x1b[K) {}\n'}
+[1.686576] (g1_tts_bridge) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[1.707053] (-) TimerEvent: {}
+[1.807491] (-) TimerEvent: {}
+[1.907865] (-) TimerEvent: {}
+[2.008409] (-) TimerEvent: {}
+[2.109013] (-) TimerEvent: {}
+[2.209687] (-) TimerEvent: {}
+[2.310433] (-) TimerEvent: {}
+[2.411115] (-) TimerEvent: {}
+[2.502462] (g1_tts_bridge) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable g1_tts_service\x1b[0m\n'}
+[2.511217] (-) TimerEvent: {}
+[2.611651] (-) TimerEvent: {}
+[2.712371] (-) TimerEvent: {}
+[2.813081] (-) TimerEvent: {}
+[2.913801] (-) TimerEvent: {}
+[2.988874] (g1_tts_bridge) StdoutLine: {'line': b'[100%] Built target g1_tts_service\n'}
+[3.001676] (g1_tts_bridge) CommandEnded: {'returncode': 0}
+[3.005111] (g1_tts_bridge) JobProgress: {'identifier': 'g1_tts_bridge', 'progress': 'install'}
+[3.013549] (g1_tts_bridge) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge'], 'cwd': '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', ''), ('USER', 'luolixin'), ('SSH_CLIENT', '10.133.59.101 51686 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/luolixin'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/luolixin/unitree_ros2_ws'), ('TERM_PROGRAM_VERSION', '1.109.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1002/vscode-ipc-6c1aeb56-b3b9-451b-bf62-6878f774b6ea.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/extensions/git/dist/askpass-main.js'), ('HF_ENDPOINT', 'https://hf-mirror.com'), ('VSCODE_GIT_ASKPASS_NODE', '/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/luolixin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/luolixin/miniconda3'), ('LOGNAME', 'luolixin'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '313'), ('_CE_CONDA', ''), ('PATH', '/opt/ros/foxy/bin:/home/luolixin/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/luolixin/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/luolixin/.vscode-server/cli/servers/Stable-bdd88df003631aaa0bcbe057cb0a940b80a476fa/server/bin/remote-cli:/home/luolixin/miniconda3/condabin:/opt/ollama/bin:/opt/ollama/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/luolixin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/luolixin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-498a64d524f65990.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/luolixin/.vscode-server/data/User/workspaceStorage/f7ae3bb4047145a8e0ecc792a0be8386/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1002/vscode-git-a19bb0aba0.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/luolixin/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('OLLAMA_HOME', '/opt/ollama'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', ''), ('_CONDA_EXE', '/home/luolixin/miniconda3/bin/conda'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge'), ('LC_ALL', 'en_US.UTF-8'), ('CONDA_EXE', '/home/luolixin/miniconda3/bin/conda'), ('SSH_CONNECTION', '10.133.59.101 51686 10.133.56.239 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('CONDA_PREFIX', ''), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[3.015099] (-) TimerEvent: {}
+[3.020745] (g1_tts_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.020997] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/ament_index/resource_index/rosidl_interfaces/g1_tts_bridge\n'}
+[3.021207] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge\n'}
+[3.021367] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv\n'}
+[3.021558] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/tts.h\n'}
+[3.021715] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail\n'}
+[3.021872] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__struct.h\n'}
+[3.022011] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__functions.h\n'}
+[3.022146] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__type_support.h\n'}
+[3.022311] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__functions.c\n'}
+[3.022351] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg\n'}
+[3.022391] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.022446] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/library_path.sh\n'}
+[3.022487] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/library_path.dsv\n'}
+[3.022535] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_generator_c.so\n'}
+[3.022654] (g1_tts_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_generator_c.so" to ""\n'}
+[3.022864] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge\n'}
+[3.022922] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv\n'}
+[3.023046] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail\n'}
+[3.023092] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__rosidl_typesupport_fastrtps_c.h\n'}
+[3.023133] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg\n'}
+[3.023173] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.023210] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_fastrtps_c.so\n'}
+[3.023315] (g1_tts_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.023438] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge\n'}
+[3.023585] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv\n'}
+[3.023727] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail\n'}
+[3.023839] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/dds_fastrtps\n'}
+[3.023888] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.023939] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg\n'}
+[3.023977] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.024015] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.024136] (g1_tts_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.024279] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge\n'}
+[3.024425] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv\n'}
+[3.024555] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail\n'}
+[3.024690] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__type_support.c\n'}
+[3.024734] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__rosidl_typesupport_introspection_c.h\n'}
+[3.024770] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg\n'}
+[3.024806] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.024919] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_introspection_c.so\n'}
+[3.024955] (g1_tts_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.025068] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_c.so\n'}
+[3.025275] (g1_tts_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_c.so" to ""\n'}
+[3.025400] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge\n'}
+[3.025544] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv\n'}
+[3.025703] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail\n'}
+[3.025768] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__traits.hpp\n'}
+[3.025924] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__struct.hpp\n'}
+[3.025983] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__builder.hpp\n'}
+[3.026121] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__type_support.hpp\n'}
+[3.026234] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/tts.hpp\n'}
+[3.026275] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg\n'}
+[3.026312] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.026350] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge\n'}
+[3.026386] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv\n'}
+[3.026440] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail\n'}
+[3.026555] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__type_support.cpp\n'}
+[3.026671] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.026712] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_introspection_cpp.so\n'}
+[3.026754] (g1_tts_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.026790] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_cpp.so\n'}
+[3.026907] (g1_tts_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_cpp.so" to ""\n'}
+[3.027037] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/pythonpath.sh\n'}
+[3.027142] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/pythonpath.dsv\n'}
+[3.027273] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/__init__.py\n'}
+[3.050475] (g1_tts_bridge) StdoutLine: {'line': b"Compiling '/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/__init__.py'...\n"}
+[3.054478] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/srv\n'}
+[3.054967] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/srv/__init__.py\n'}
+[3.055323] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/srv/_tts_s.c\n'}
+[3.055493] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/srv/_tts.py\n'}
+[3.055983] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/g1_tts_bridge_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[3.056548] (g1_tts_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/g1_tts_bridge_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[3.056974] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/g1_tts_bridge_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[3.057319] (g1_tts_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/g1_tts_bridge_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[3.057461] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/g1_tts_bridge_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[3.057623] (g1_tts_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/g1_tts_bridge_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[3.057755] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__python.so\n'}
+[3.057901] (g1_tts_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__python.so" to ""\n'}
+[3.058046] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/srv/TTS.idl\n'}
+[3.058093] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/srv/TTS.srv\n'}
+[3.058136] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/srv/TTS_Request.msg\n'}
+[3.058178] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/srv/TTS_Response.msg\n'}
+[3.058219] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/g1_tts_bridge/g1_tts_service\n'}
+[3.063125] (g1_tts_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/g1_tts_bridge/g1_tts_service" to ""\n'}
+[3.063306] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/srv\n'}
+[3.063438] (g1_tts_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/srv/TTS.srv\n'}
+[3.063492] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/ament_index/resource_index/package_run_dependencies/g1_tts_bridge\n'}
+[3.063643] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/ament_index/resource_index/parent_prefix_path/g1_tts_bridge\n'}
+[3.063698] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/ament_prefix_path.sh\n'}
+[3.063816] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/ament_prefix_path.dsv\n'}
+[3.063977] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/path.sh\n'}
+[3.064026] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/path.dsv\n'}
+[3.064147] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/local_setup.bash\n'}
+[3.064335] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/local_setup.sh\n'}
+[3.064462] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/local_setup.zsh\n'}
+[3.064596] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/local_setup.dsv\n'}
+[3.064702] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/package.dsv\n'}
+[3.064747] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/ament_index/resource_index/packages/g1_tts_bridge\n'}
+[3.064864] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_generator_cExport.cmake\n'}
+[3.064992] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.065147] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.065271] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.065418] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_cExport.cmake\n'}
+[3.065550] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.065673] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_generator_cppExport.cmake\n'}
+[3.065842] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.065968] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.066094] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_cppExport.cmake\n'}
+[3.066204] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.066314] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/rosidl_cmake-extras.cmake\n'}
+[3.066467] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.066686] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.066902] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.067077] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.067273] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.067318] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.067355] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridgeConfig.cmake\n'}
+[3.067390] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridgeConfig-version.cmake\n'}
+[3.067427] (g1_tts_bridge) StdoutLine: {'line': b'-- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/package.xml\n'}
+[3.070081] (g1_tts_bridge) CommandEnded: {'returncode': 0}
+[3.105713] (g1_tts_bridge) JobEnded: {'identifier': 'g1_tts_bridge', 'rc': 0}
+[3.107725] (-) EventReactorShutdown: {}

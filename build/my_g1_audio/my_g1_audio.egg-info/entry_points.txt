@@ -1,0 +1,5 @@
+[console_scripts]
+brain_service = my_g1_audio.brain:main
+brain_update_service = my_g1_audio.brain_update:main
+search_service = my_g1_audio.search_neuroxiv:main
+

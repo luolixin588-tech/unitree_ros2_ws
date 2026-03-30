@@ -1,0 +1,128 @@
+[0.019s] Invoking command in '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake --build /home/luolixin/unitree_ros2_ws/build/g1_tts_bridge -- -j40 -l40
+[0.064s] [  2%] Built target g1_tts_bridge__cpp
+[0.065s] [ 11%] Built target g1_tts_bridge__rosidl_generator_c
+[0.077s] [ 17%] Built target g1_tts_cli
+[0.079s] [ 25%] Built target g1_tts_bridge__rosidl_typesupport_fastrtps_cpp
+[0.080s] [ 34%] Built target g1_tts_bridge__rosidl_typesupport_cpp
+[0.080s] [ 42%] Built target g1_tts_bridge__rosidl_typesupport_introspection_c
+[0.081s] [ 51%] Built target g1_tts_bridge__rosidl_typesupport_introspection_cpp
+[0.082s] [ 60%] Built target g1_tts_bridge__rosidl_typesupport_c
+[0.096s] [ 68%] Built target g1_tts_bridge__rosidl_typesupport_fastrtps_c
+[0.111s] [ 68%] Built target g1_tts_bridge
+[0.129s] [ 71%] Built target g1_tts_bridge__py
+[0.146s] [ 77%] Built target g1_tts_service
+[0.153s] [ 82%] Built target g1_tts_bridge__python
+[0.173s] [ 88%] Built target g1_tts_bridge__rosidl_typesupport_fastrtps_c__pyext
+[0.176s] [ 94%] Built target g1_tts_bridge__rosidl_typesupport_c__pyext
+[0.177s] [100%] Built target g1_tts_bridge__rosidl_typesupport_introspection_c__pyext
+[0.188s] Invoked command in '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake --build /home/luolixin/unitree_ros2_ws/build/g1_tts_bridge -- -j40 -l40
+[0.198s] Invoking command in '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake --install /home/luolixin/unitree_ros2_ws/build/g1_tts_bridge
+[0.204s] -- Install configuration: ""
+[0.205s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/ament_index/resource_index/rosidl_interfaces/g1_tts_bridge
+[0.205s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge
+[0.205s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv
+[0.205s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/tts.h
+[0.205s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail
+[0.205s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__struct.h
+[0.205s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__functions.h
+[0.205s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__type_support.h
+[0.205s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__functions.c
+[0.205s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg
+[0.206s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg/rosidl_generator_c__visibility_control.h
+[0.206s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/library_path.sh
+[0.206s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/library_path.dsv
+[0.206s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_generator_c.so
+[0.206s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge
+[0.206s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv
+[0.206s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail
+[0.206s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__rosidl_typesupport_fastrtps_c.h
+[0.206s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg
+[0.206s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.206s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_fastrtps_c.so
+[0.206s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge
+[0.206s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv
+[0.207s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail
+[0.207s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/dds_fastrtps
+[0.207s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__rosidl_typesupport_fastrtps_cpp.hpp
+[0.207s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg
+[0.207s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.207s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_fastrtps_cpp.so
+[0.207s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge
+[0.207s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv
+[0.207s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail
+[0.207s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__type_support.c
+[0.207s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__rosidl_typesupport_introspection_c.h
+[0.207s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg
+[0.207s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_introspection_c.so
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_c.so
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__traits.hpp
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__struct.hpp
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__builder.hpp
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__type_support.hpp
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/tts.hpp
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__type_support.cpp
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/include/g1_tts_bridge/srv/detail/tts__rosidl_typesupport_introspection_cpp.hpp
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_introspection_cpp.so
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__rosidl_typesupport_cpp.so
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/pythonpath.sh
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/pythonpath.dsv
+[0.208s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/__init__.py
+[0.236s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/srv
+[0.236s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/srv/__init__.py
+[0.236s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/srv/_tts_s.c
+[0.236s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/srv/_tts.py
+[0.237s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/g1_tts_bridge_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[0.238s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/g1_tts_bridge_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[0.238s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages/g1_tts_bridge/g1_tts_bridge_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[0.238s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/libg1_tts_bridge__python.so
+[0.238s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/srv/TTS.idl
+[0.239s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/srv/TTS.srv
+[0.239s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/srv/TTS_Request.msg
+[0.239s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/srv/TTS_Response.msg
+[0.239s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/g1_tts_bridge/g1_tts_service
+[0.239s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/g1_tts_bridge/g1_tts_cli
+[0.239s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/srv
+[0.239s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/srv/TTS.srv
+[0.240s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/ament_index/resource_index/package_run_dependencies/g1_tts_bridge
+[0.240s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/ament_index/resource_index/parent_prefix_path/g1_tts_bridge
+[0.240s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/ament_prefix_path.sh
+[0.240s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/ament_prefix_path.dsv
+[0.240s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/path.sh
+[0.240s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/environment/path.dsv
+[0.240s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/local_setup.bash
+[0.240s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/local_setup.sh
+[0.240s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/local_setup.zsh
+[0.240s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/local_setup.dsv
+[0.240s] -- Installing: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/package.dsv
+[0.241s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/ament_index/resource_index/packages/g1_tts_bridge
+[0.241s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_generator_cExport.cmake
+[0.241s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_generator_cExport-noconfig.cmake
+[0.241s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_introspection_cExport.cmake
+[0.241s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.241s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_cExport.cmake
+[0.241s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_cExport-noconfig.cmake
+[0.241s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_generator_cppExport.cmake
+[0.241s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_introspection_cppExport.cmake
+[0.241s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.241s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_cppExport.cmake
+[0.241s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridge__rosidl_typesupport_cppExport-noconfig.cmake
+[0.242s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/rosidl_cmake-extras.cmake
+[0.242s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.242s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/ament_cmake_export_libraries-extras.cmake
+[0.242s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/ament_cmake_export_targets-extras.cmake
+[0.242s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.242s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.242s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.242s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridgeConfig.cmake
+[0.242s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/cmake/g1_tts_bridgeConfig-version.cmake
+[0.242s] -- Up-to-date: /home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/share/g1_tts_bridge/package.xml
+[0.246s] Invoked command in '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake --install /home/luolixin/unitree_ros2_ws/build/g1_tts_bridge

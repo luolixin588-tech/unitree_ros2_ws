@@ -1,0 +1,2 @@
+Invoking command in '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/local/bin/cmake --build /home/luolixin/unitree_ros2_ws/build/g1_tts_bridge -- -j40 -l40
+Invoked command in '/home/luolixin/unitree_ros2_ws/build/g1_tts_bridge' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/local/bin/cmake --build /home/luolixin/unitree_ros2_ws/build/g1_tts_bridge -- -j40 -l40

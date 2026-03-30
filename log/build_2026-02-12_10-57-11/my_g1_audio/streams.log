@@ -1,0 +1,25 @@
+[0.401s] Invoking command in '/home/luolixin/unitree_ros2_ws/src/my_g1_audio': PYTHONPATH=/home/luolixin/unitree_ros2_ws/build/my_g1_audio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luolixin/unitree_ros2_ws/install/my_g1_audio/lib/python3.8/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_g1_audio build --build-base /home/luolixin/unitree_ros2_ws/build/my_g1_audio/build install --record /home/luolixin/unitree_ros2_ws/build/my_g1_audio/install.log --install-scripts $base/lib/my_g1_audio --single-version-externally-managed install_data
+[0.528s] running egg_info
+[0.528s] writing ../../build/my_g1_audio/my_g1_audio.egg-info/PKG-INFO
+[0.529s] writing dependency_links to ../../build/my_g1_audio/my_g1_audio.egg-info/dependency_links.txt
+[0.529s] writing entry points to ../../build/my_g1_audio/my_g1_audio.egg-info/entry_points.txt
+[0.529s] writing requirements to ../../build/my_g1_audio/my_g1_audio.egg-info/requires.txt
+[0.529s] writing top-level names to ../../build/my_g1_audio/my_g1_audio.egg-info/top_level.txt
+[0.550s] reading manifest file '../../build/my_g1_audio/my_g1_audio.egg-info/SOURCES.txt'
+[0.550s] writing manifest file '../../build/my_g1_audio/my_g1_audio.egg-info/SOURCES.txt'
+[0.551s] running build
+[0.551s] running build_py
+[0.551s] copying my_g1_audio/search_neuroxiv.py -> /home/luolixin/unitree_ros2_ws/build/my_g1_audio/build/lib/my_g1_audio
+[0.551s] running install
+[0.551s] running install_lib
+[0.552s] copying /home/luolixin/unitree_ros2_ws/build/my_g1_audio/build/lib/my_g1_audio/search_neuroxiv.py -> /home/luolixin/unitree_ros2_ws/install/my_g1_audio/lib/python3.8/site-packages/my_g1_audio
+[0.552s] byte-compiling /home/luolixin/unitree_ros2_ws/install/my_g1_audio/lib/python3.8/site-packages/my_g1_audio/search_neuroxiv.py to search_neuroxiv.cpython-38.pyc
+[0.554s] running install_data
+[0.554s] running install_egg_info
+[0.555s] removing '/home/luolixin/unitree_ros2_ws/install/my_g1_audio/lib/python3.8/site-packages/my_g1_audio-0.0.0-py3.8.egg-info' (and everything under it)
+[0.556s] Copying ../../build/my_g1_audio/my_g1_audio.egg-info to /home/luolixin/unitree_ros2_ws/install/my_g1_audio/lib/python3.8/site-packages/my_g1_audio-0.0.0-py3.8.egg-info
+[0.556s] running install_scripts
+[0.570s] Installing brain_service script to /home/luolixin/unitree_ros2_ws/install/my_g1_audio/lib/my_g1_audio
+[0.570s] Installing search_service script to /home/luolixin/unitree_ros2_ws/install/my_g1_audio/lib/my_g1_audio
+[0.570s] writing list of installed files to '/home/luolixin/unitree_ros2_ws/build/my_g1_audio/install.log'
+[0.600s] Invoked command in '/home/luolixin/unitree_ros2_ws/src/my_g1_audio' returned '0': PYTHONPATH=/home/luolixin/unitree_ros2_ws/build/my_g1_audio/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/luolixin/unitree_ros2_ws/install/my_g1_audio/lib/python3.8/site-packages: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_g1_audio build --build-base /home/luolixin/unitree_ros2_ws/build/my_g1_audio/build install --record /home/luolixin/unitree_ros2_ws/build/my_g1_audio/install.log --install-scripts $base/lib/my_g1_audio --single-version-externally-managed install_data

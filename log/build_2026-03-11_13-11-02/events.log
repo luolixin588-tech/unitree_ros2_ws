@@ -1,0 +1,96 @@
+[0.000000] (-) TimerEvent: {}
+[0.000883] (-) JobUnselected: {'identifier': 'cyclonedds'}
+[0.001045] (-) JobUnselected: {'identifier': 'g1_tts_bridge'}
+[0.001325] (-) JobUnselected: {'identifier': 'my_g1_audio'}
+[0.001519] (-) JobUnselected: {'identifier': 'rmw_cyclonedds_cpp'}
+[0.001629] (-) JobUnselected: {'identifier': 'unitree_api'}
+[0.001702] (-) JobUnselected: {'identifier': 'unitree_go'}
+[0.001777] (-) JobUnselected: {'identifier': 'unitree_hg'}
+[0.001859] (unitree_ros2_example) JobQueued: {'identifier': 'unitree_ros2_example', 'dependencies': OrderedDict([('unitree_api', '/home/luolixin/unitree_ros2_ws/install/unitree_api'), ('unitree_go', '/home/luolixin/unitree_ros2_ws/install/unitree_go'), ('unitree_hg', '/home/luolixin/unitree_ros2_ws/install/unitree_hg')])}
+[0.001961] (unitree_ros2_example) JobStarted: {'identifier': 'unitree_ros2_example'}
+[0.099503] (-) TimerEvent: {}
+[0.133509] (unitree_ros2_example) JobProgress: {'identifier': 'unitree_ros2_example', 'progress': 'cmake'}
+[0.147543] (unitree_ros2_example) JobProgress: {'identifier': 'unitree_ros2_example', 'progress': 'build'}
+[0.149423] (unitree_ros2_example) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/luolixin/unitree_ros2_ws/build/unitree_ros2_example', '--', '-j40', '-l40'], 'cwd': '/home/luolixin/unitree_ros2_ws/build/unitree_ros2_example', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', ''), ('USER', 'luolixin'), ('SSH_CLIENT', '10.133.56.137 54426 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/luolixin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/luolixin/unitree_ros2_ws/install/unitree_hg/lib:/home/luolixin/unitree_ros2_ws/install/unitree_go/lib:/home/luolixin/unitree_ros2_ws/install/unitree_api/lib:/home/luolixin/unitree_ros2_ws/install/rmw_cyclonedds_cpp/lib:/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib:/home/luolixin/unitree_ros2_ws/install/cyclonedds/lib:/home/luolixin/unitree_ros2_ws/src/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/luolixin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/luolixin'), ('CONDA_SHLVL', '0'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="eno1" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('OLDPWD', '/home/luolixin'), ('TERM_PROGRAM_VERSION', '1.109.5'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1002/vscode-ipc-ea2e34ae-2dc8-46ad-8c2d-8300fabc7b3c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/luolixin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass-main.js'), ('HF_ENDPOINT', 'https://hf-mirror.com'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/luolixin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1002/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/luolixin/miniconda3'), ('COLCON_PREFIX_PATH', '/home/luolixin/unitree_ros2_ws/install:/home/luolixin/unitree_ros2_ws/src/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'luolixin'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/luolixin/unitree_ros2_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/luolixin/unitree_ros2_ws/install/cyclonedds/lib/pkgconfig:/home/luolixin/unitree_ros2_ws/src/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/luolixin/unitree_ros2_ws/src/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1304'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/bin:/home/luolixin/unitree_ros2_ws/install/cyclonedds/bin:/home/luolixin/unitree_ros2_ws/src/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/home/luolixin/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/luolixin/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/luolixin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/remote-cli:/home/luolixin/miniconda3/condabin:/opt/ollama/bin:/opt/ollama/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1002'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/luolixin/.vscode-server/data/User/workspaceStorage/2257c70e0fb41a4d1f6939682683a62d/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1002/vscode-git-919f7840e8.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/luolixin/unitree_ros2_ws/install/unitree_ros2_example:/home/luolixin/unitree_ros2_ws/install/unitree_hg:/home/luolixin/unitree_ros2_ws/install/unitree_go:/home/luolixin/unitree_ros2_ws/install/unitree_api:/home/luolixin/unitree_ros2_ws/install/rmw_cyclonedds_cpp:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge:/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/luolixin/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('OLLAMA_HOME', '/opt/ollama'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', ''), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('_CONDA_EXE', '/home/luolixin/miniconda3/bin/conda'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/luolixin/unitree_ros2_ws/build/unitree_ros2_example'), ('LC_ALL', 'en_US.UTF-8'), ('CONDA_EXE', '/home/luolixin/miniconda3/bin/conda'), ('SSH_CONNECTION', '10.133.56.137 54426 10.133.56.239 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/luolixin/unitree_ros2_ws/install/unitree_hg/lib/python3.8/site-packages:/home/luolixin/unitree_ros2_ws/install/unitree_go/lib/python3.8/site-packages:/home/luolixin/unitree_ros2_ws/install/unitree_api/lib/python3.8/site-packages:/home/luolixin/unitree_ros2_ws/install/my_g1_audio/lib/python3.8/site-packages:/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/luolixin/unitree_ros2_ws/install/unitree_hg:/home/luolixin/unitree_ros2_ws/install/unitree_go:/home/luolixin/unitree_ros2_ws/install/unitree_api:/home/luolixin/unitree_ros2_ws/install/unitree_ros2_example:/home/luolixin/unitree_ros2_ws/install/rmw_cyclonedds_cpp:/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge:/home/luolixin/unitree_ros2_ws/install/cyclonedds:/home/luolixin/unitree_ros2_ws/src/unitree_ros2/cyclonedds_ws/install/cyclonedds:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy')]), 'shell': False}
+[0.199705] (-) TimerEvent: {}
+[0.291762] (unitree_ros2_example) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/g1_arm_action_example.dir/src/g1/high_level/g1_arm_action_example.cpp.o\x1b[0m\n'}
+[0.293066] (unitree_ros2_example) StdoutLine: {'line': b'[  6%] Built target g1_dex3_example\n'}
+[0.294165] (unitree_ros2_example) StdoutLine: {'line': b'[ 20%] Built target read_low_state_hg\n'}
+[0.294305] (unitree_ros2_example) StdoutLine: {'line': b'[ 20%] Built target g1_low_level_example\n'}
+[0.294391] (unitree_ros2_example) StdoutLine: {'line': b'[ 20%] Built target read_low_state\n'}
+[0.294517] (unitree_ros2_example) StdoutLine: {'line': b'[ 24%] Built target low_level_ctrl\n'}
+[0.294557] (unitree_ros2_example) StdoutLine: {'line': b'[ 29%] Built target low_level_ctrl_hg\n'}
+[0.294796] (unitree_ros2_example) StdoutLine: {'line': b'[ 34%] Built target go2_sport_client\n'}
+[0.295158] (unitree_ros2_example) StdoutLine: {'line': b'[ 44%] Built target read_motion_state\n'}
+[0.295317] (unitree_ros2_example) StdoutLine: {'line': b'[ 44%] Built target read_wireless_controller\n'}
+[0.295365] (unitree_ros2_example) StdoutLine: {'line': b'[ 46%] Built target go2_robot_state_client\n'}
+[0.295521] (unitree_ros2_example) StdoutLine: {'line': b'[ 60%] Built target g1_audio_client_example\n'}
+[0.295578] (unitree_ros2_example) StdoutLine: {'line': b'[ 60%] Built target g1_arm_sdk_dds_example\n'}
+[0.295619] (unitree_ros2_example) StdoutLine: {'line': b'[ 60%] Built target g1_ankle_swing_example\n'}
+[0.295938] (unitree_ros2_example) StdoutLine: {'line': b'[ 65%] Built target go2_stand_example\n'}
+[0.296127] (unitree_ros2_example) StdoutLine: {'line': b'[ 70%] Built target b2w_stand_example\n'}
+[0.296272] (unitree_ros2_example) StdoutLine: {'line': b'[ 75%] Built target b2_stand_example\n'}
+[0.296633] (unitree_ros2_example) StdoutLine: {'line': b'[ 81%] Built target g1_loco_client_example\n'}
+[0.296971] (unitree_ros2_example) StdoutLine: {'line': b'[ 86%] Built target b2_sport_client\n'}
+[0.297740] (unitree_ros2_example) StdoutLine: {'line': b'[ 96%] Built target b2w_sport_client\n'}
+[0.297840] (unitree_ros2_example) StdoutLine: {'line': b'[ 96%] Built target g1_dual_arm_example\n'}
+[0.299698] (-) TimerEvent: {}
+[0.344271] (unitree_ros2_example) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:11\x1b[m\x1b[K:\n'}
+[0.344764] (unitree_ros2_example) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/include/common/ut_errror.hpp:13:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kbackslash-newline at end of file\n'}
+[0.344984] (unitree_ros2_example) StderrLine: {'line': b'   13 | #define UT_PRINT_ERR(code, error)                         \\\n'}
+[0.345131] (unitree_ros2_example) StderrLine: {'line': b'      |                                                            \n'}
+[0.399922] (-) TimerEvent: {}
+[0.500567] (-) TimerEvent: {}
+[0.601124] (-) TimerEvent: {}
+[0.701673] (-) TimerEvent: {}
+[0.802210] (-) TimerEvent: {}
+[0.902736] (-) TimerEvent: {}
+[1.003267] (-) TimerEvent: {}
+[1.103797] (-) TimerEvent: {}
+[1.204343] (-) TimerEvent: {}
+[1.304887] (-) TimerEvent: {}
+[1.405414] (-) TimerEvent: {}
+[1.505946] (-) TimerEvent: {}
+[1.606477] (-) TimerEvent: {}
+[1.706964] (-) TimerEvent: {}
+[1.807408] (-) TimerEvent: {}
+[1.850081] (unitree_ros2_example) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:12\x1b[m\x1b[K:\n'}
+[1.850538] (unitree_ros2_example) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/include/g1/g1_arm_action_client.hpp:45:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kextra \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wpedantic\x1b[m\x1b[K]\n'}
+[1.850736] (unitree_ros2_example) StderrLine: {'line': b'   45 |     "sport_services_interface#Expert%20interface")\x1b[01;35m\x1b[K;\x1b[m\x1b[K\n'}
+[1.850902] (unitree_ros2_example) StderrLine: {'line': b'      |                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.867280] (unitree_ros2_example) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KG1ArmActionNode::G1ArmActionNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.867667] (unitree_ros2_example) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:20:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclient_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.867858] (unitree_ros2_example) StderrLine: {'line': b'   20 |     \x1b[01;31m\x1b[Kclient_\x1b[m\x1b[K = std::make_shared<unitree::robot::g1::G1ArmActionClient>(this);\n'}
+[1.868020] (unitree_ros2_example) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.879618] (unitree_ros2_example) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid G1ArmActionNode::ProcessAction(int32_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.880018] (unitree_ros2_example) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:85:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclient_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.880204] (unitree_ros2_example) StderrLine: {'line': b'   85 |       int32_t ret = \x1b[01;31m\x1b[Kclient_\x1b[m\x1b[K->GetActionList(action_list_data);\n'}
+[1.880360] (unitree_ros2_example) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.881348] (unitree_ros2_example) StderrLine: {'line': b'\x1b[01m\x1b[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:93:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclient_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.881754] (unitree_ros2_example) StderrLine: {'line': b'   93 |       int32_t ret = \x1b[01;31m\x1b[Kclient_\x1b[m\x1b[K->ExecuteAction(action_id);\n'}
+[1.881946] (unitree_ros2_example) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.907542] (-) TimerEvent: {}
+[2.008000] (-) TimerEvent: {}
+[2.108443] (-) TimerEvent: {}
+[2.208930] (-) TimerEvent: {}
+[2.309376] (-) TimerEvent: {}
+[2.409830] (-) TimerEvent: {}
+[2.510284] (-) TimerEvent: {}
+[2.610729] (-) TimerEvent: {}
+[2.711174] (-) TimerEvent: {}
+[2.811622] (-) TimerEvent: {}
+[2.912074] (-) TimerEvent: {}
+[3.012518] (-) TimerEvent: {}
+[3.112966] (-) TimerEvent: {}
+[3.213420] (-) TimerEvent: {}
+[3.313866] (-) TimerEvent: {}
+[3.414320] (-) TimerEvent: {}
+[3.514835] (-) TimerEvent: {}
+[3.615289] (-) TimerEvent: {}
+[3.691529] (unitree_ros2_example) StderrLine: {'line': b'make[2]: *** [CMakeFiles/g1_arm_action_example.dir/build.make:76: CMakeFiles/g1_arm_action_example.dir/src/g1/high_level/g1_arm_action_example.cpp.o] Error 1\n'}
+[3.692200] (unitree_ros2_example) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:463: CMakeFiles/g1_arm_action_example.dir/all] Error 2\n'}
+[3.692542] (unitree_ros2_example) StderrLine: {'line': b'make: *** [Makefile:146: all] Error 2\n'}
+[3.696111] (unitree_ros2_example) CommandEnded: {'returncode': 2}
+[3.708012] (unitree_ros2_example) JobEnded: {'identifier': 'unitree_ros2_example', 'rc': 2}
+[3.715409] (-) TimerEvent: {}
+[3.718540] (-) EventReactorShutdown: {}

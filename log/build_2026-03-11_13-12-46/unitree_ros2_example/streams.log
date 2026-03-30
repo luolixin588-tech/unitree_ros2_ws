@@ -1,0 +1,69 @@
+[0.024s] Invoking command in '/home/luolixin/unitree_ros2_ws/build/unitree_ros2_example': CMAKE_PREFIX_PATH=/home/luolixin/unitree_ros2_ws/install/unitree_hg:/home/luolixin/unitree_ros2_ws/install/unitree_go:/home/luolixin/unitree_ros2_ws/install/unitree_api:/home/luolixin/unitree_ros2_ws/install/unitree_ros2_example:/home/luolixin/unitree_ros2_ws/install/rmw_cyclonedds_cpp:/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge:/home/luolixin/unitree_ros2_ws/install/cyclonedds:/home/luolixin/unitree_ros2_ws/src/unitree_ros2/cyclonedds_ws/install/cyclonedds:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake --build /home/luolixin/unitree_ros2_ws/build/unitree_ros2_example -- -j40 -l40
+[0.072s] [  8%] Built target read_motion_state
+[0.072s] [  8%] Built target g1_low_level_example
+[0.072s] [ 15%] Built target read_low_state_hg
+[0.072s] [ 17%] Built target low_level_ctrl
+[0.072s] [ 22%] Built target g1_arm_sdk_dds_example
+[0.072s] [ 29%] Built target read_low_state
+[0.072s] [ 31%] Built target g1_loco_client_example
+[0.073s] [ 36%] Built target g1_ankle_swing_example
+[0.073s] [ 43%] Built target g1_audio_client_example
+[0.073s] [ 44%] Built target low_level_ctrl_hg
+[0.073s] [ 48%] Built target read_wireless_controller
+[0.074s] [ 53%] Built target go2_stand_example
+[0.075s] [ 62%] Built target go2_sport_client
+[0.075s] [ 63%] Built target g1_dex3_example
+[0.075s] [ 68%] Built target go2_robot_state_client
+[0.075s] [ 74%] Built target b2w_sport_client
+[0.076s] [ 82%] Built target b2w_stand_example
+[0.076s] [ 84%] Built target b2_sport_client
+[0.077s] [ 89%] Built target b2_stand_example
+[0.077s] [ 94%] Built target g1_dual_arm_example
+[0.084s] [ 96%] [32mBuilding CXX object CMakeFiles/g1_arm_action_example.dir/src/g1/high_level/g1_arm_action_example.cpp.o[0m
+[0.123s] In file included from [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:11[m[K:
+[0.124s] [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/include/common/ut_errror.hpp:13:59:[m[K [01;35m[Kwarning: [m[Kbackslash-newline at end of file
+[0.124s]    13 | #define UT_PRINT_ERR(code, error)                         \
+[0.124s]       |                                                            
+[1.386s] In file included from [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/src/g1/high_level/g1_arm_action_example.cpp:12[m[K:
+[1.386s] [01m[K/home/luolixin/unitree_ros2_ws/src/unitree_ros2/example/src/include/g1/g1_arm_action_client.hpp:45:51:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+[1.386s]    45 |     "sport_services_interface#Expert%20interface")[01;35m[K;[m[K
+[1.386s]       |                                                   [01;35m[K^[m[K
+[6.547s] [ 98%] [32m[1mLinking CXX executable g1_arm_action_example[0m
+[6.855s] [100%] Built target g1_arm_action_example
+[6.867s] Invoked command in '/home/luolixin/unitree_ros2_ws/build/unitree_ros2_example' returned '0': CMAKE_PREFIX_PATH=/home/luolixin/unitree_ros2_ws/install/unitree_hg:/home/luolixin/unitree_ros2_ws/install/unitree_go:/home/luolixin/unitree_ros2_ws/install/unitree_api:/home/luolixin/unitree_ros2_ws/install/unitree_ros2_example:/home/luolixin/unitree_ros2_ws/install/rmw_cyclonedds_cpp:/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge:/home/luolixin/unitree_ros2_ws/install/cyclonedds:/home/luolixin/unitree_ros2_ws/src/unitree_ros2/cyclonedds_ws/install/cyclonedds:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake --build /home/luolixin/unitree_ros2_ws/build/unitree_ros2_example -- -j40 -l40
+[6.875s] Invoking command in '/home/luolixin/unitree_ros2_ws/build/unitree_ros2_example': CMAKE_PREFIX_PATH=/home/luolixin/unitree_ros2_ws/install/unitree_hg:/home/luolixin/unitree_ros2_ws/install/unitree_go:/home/luolixin/unitree_ros2_ws/install/unitree_api:/home/luolixin/unitree_ros2_ws/install/unitree_ros2_example:/home/luolixin/unitree_ros2_ws/install/rmw_cyclonedds_cpp:/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge:/home/luolixin/unitree_ros2_ws/install/cyclonedds:/home/luolixin/unitree_ros2_ws/src/unitree_ros2/cyclonedds_ws/install/cyclonedds:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake --install /home/luolixin/unitree_ros2_ws/build/unitree_ros2_example
+[6.880s] -- Install configuration: ""
+[6.881s] -- Execute custom install script
+[6.882s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//low_level_ctrl
+[6.882s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//low_level_ctrl_hg
+[6.883s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//g1_low_level_example
+[6.883s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//read_low_state
+[6.883s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//read_low_state_hg
+[6.884s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//read_motion_state
+[6.884s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//read_wireless_controller
+[6.885s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//go2_sport_client
+[6.885s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//go2_stand_example
+[6.886s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//go2_robot_state_client
+[6.886s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//g1_arm_sdk_dds_example
+[6.887s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//g1_arm_action_example
+[6.887s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//g1_dex3_example
+[6.888s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//g1_loco_client_example
+[6.889s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//g1_ankle_swing_example
+[6.889s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//g1_dual_arm_example
+[6.890s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example//g1_audio_client_example
+[6.890s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/share/ament_index/resource_index/package_run_dependencies/unitree_ros2_example
+[6.891s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/share/ament_index/resource_index/parent_prefix_path/unitree_ros2_example
+[6.891s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/share/unitree_ros2_example/environment/ament_prefix_path.sh
+[6.891s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/share/unitree_ros2_example/environment/ament_prefix_path.dsv
+[6.892s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/share/unitree_ros2_example/environment/path.sh
+[6.892s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/share/unitree_ros2_example/environment/path.dsv
+[6.892s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/share/unitree_ros2_example/local_setup.bash
+[6.893s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/share/unitree_ros2_example/local_setup.sh
+[6.893s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/share/unitree_ros2_example/local_setup.zsh
+[6.894s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/share/unitree_ros2_example/local_setup.dsv
+[6.894s] -- Symlinking: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/share/unitree_ros2_example/package.dsv
+[6.901s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/share/ament_index/resource_index/packages/unitree_ros2_example
+[6.901s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/share/unitree_ros2_example/cmake/unitree_ros2_exampleConfig.cmake
+[6.902s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/share/unitree_ros2_example/cmake/unitree_ros2_exampleConfig-version.cmake
+[6.902s] -- Up-to-date symlink: /home/luolixin/unitree_ros2_ws/install/unitree_ros2_example/share/unitree_ros2_example/package.xml
+[6.904s] Invoked command in '/home/luolixin/unitree_ros2_ws/build/unitree_ros2_example' returned '0': CMAKE_PREFIX_PATH=/home/luolixin/unitree_ros2_ws/install/unitree_hg:/home/luolixin/unitree_ros2_ws/install/unitree_go:/home/luolixin/unitree_ros2_ws/install/unitree_api:/home/luolixin/unitree_ros2_ws/install/unitree_ros2_example:/home/luolixin/unitree_ros2_ws/install/rmw_cyclonedds_cpp:/home/luolixin/unitree_ros2_ws/install/g1_tts_bridge:/home/luolixin/unitree_ros2_ws/install/cyclonedds:/home/luolixin/unitree_ros2_ws/src/unitree_ros2/cyclonedds_ws/install/cyclonedds:/home/luolixin/unitree_ros2_ws/install/my_g1_audio:/opt/ros/foxy /usr/local/bin/cmake --install /home/luolixin/unitree_ros2_ws/build/unitree_ros2_example

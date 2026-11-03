@@ -27,7 +27,7 @@
 
 - Ubuntu 20.04
 - ROS 2 Foxy：`/opt/ros/foxy`
-- Ollama 服务，并且已经拉取模型 `qwen2.5:14b`
+- Ollama，程序在 `/opt/ollama/bin/ollama`，模型目录在 `/opt/ollama/models`。规划使用的模型是 `qwen2.5:14b`。
 
 新账户自己需要：
 
@@ -79,13 +79,38 @@ colcon build --packages-select my_g1_audio
 
 CycloneDDS 使用仓库里已经生成的 `src/unitree_ros2/cyclonedds_ws/install`，它的 bash 脚本按自身位置定位，克隆到新的家目录后可以继续用。
 
-## 5. 启动
+## 5. 启动和关闭 Ollama
 
-先确认 Ollama 在运行，并且能看到 `qwen2.5:14b`：
+Ollama 是系统服务，由 root 运行，监听 11434 端口。规划节点把请求发到 `http://127.0.0.1:11434/api/chat`。启动三个终端之前先打开它。
+
+启动：
 
 ```bash
-ollama list
+sudo systemctl start ollama
+/opt/ollama/bin/ollama list
 ```
+
+`ollama list` 的结果里要有 `qwen2.5:14b`。没有这个模型时，先执行：
+
+```bash
+/opt/ollama/bin/ollama pull qwen2.5:14b
+```
+
+关闭：
+
+```bash
+sudo systemctl stop ollama
+```
+
+看当前状态：
+
+```bash
+systemctl is-active ollama
+```
+
+`active` 表示正在运行，`inactive` 表示已关闭。这个服务当前没有设成开机自启，机器重启后需要再执行一次 `sudo systemctl start ollama`。
+
+## 6. 启动机器人
 
 开三个终端，都使用新账户。顺序是耳朵、运动服务、规划。运动服务要先于规划进入等待状态，否则手臂指令发出后没有程序接收。
 
@@ -126,7 +151,7 @@ bash ~/unitree_ros2_ws/start_robot.sh
 
 终端 B 的运动服务不会被这个脚本关掉。
 
-## 6. 不使用脚本时的等价命令
+## 7. 不使用脚本时的等价命令
 
 耳朵：
 

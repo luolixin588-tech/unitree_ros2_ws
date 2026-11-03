@@ -1,9 +1,10 @@
 # G1 语言驱动控制：同一台电脑上的复现与启动
 
-这套程序让 Unitree G1 听一句中文或英文，由本地大模型规划技能，再驱动语音、手臂和底盘。它分两个进程：
+这套程序让 Unitree G1 听一句中文或英文，由本地大模型规划技能，再驱动语音、手臂和底盘。它分三个必须同时开着的进程：
 
 - **耳朵**：`start_ear.sh` 接收机器人麦克风的组播音频，做语音活动检测和语音识别，把文本发到 `/audio_msg`。
-- **规划**：`start_robot.sh` 先启动两个本机检索服务，再启动 `brain_update_sequential`。该节点订阅 `/audio_msg`，向本机 Ollama 的 `qwen2.5:14b` 要一份有顺序的计划，然后逐步执行。手臂动作之后固定等待 10 秒，底盘移动之后固定等待 5 秒，再执行下一步。
+- **运动服务**：`g1_arm_action_example` 订阅 `/g1_arm_action_cmd`。`brain_update_sequential.py` 只往这个话题发布动作编号，真正让机器人做挥手、握手等预设动作的是这个程序。它不在两个启动脚本里，要单独开一个终端，并一直保持运行。
+- **规划**：`start_robot.sh` 先启动两个本机检索服务，再启动 `brain_update_sequential`。该节点订阅 `/audio_msg`，向本机 Ollama 的 `qwen2.5:14b` 要一份有顺序的计划，然后逐步执行。手臂动作之后固定等待 10 秒，底盘移动之后固定等待 5 秒，再执行下一步。底盘移动不经过上面的运动服务，每次由规划节点直接调用 `~/unitree_sdk2/build/bin/g1_loco_client`。
 
 仓库是私有的。另一个 Linux 账户要先能用有权限的 GitHub 账号克隆。
 
@@ -97,11 +98,12 @@ make -j
 
 ```bash
 source /opt/ros/foxy/setup.bash
+source ~/unitree_ros2_ws/src/unitree_ros2/setup.sh
 cd ~/unitree_ros2_ws
-colcon build --packages-select g1_tts_bridge my_g1_audio
+colcon build --packages-select g1_tts_bridge my_g1_audio unitree_ros2_example
 ```
 
-`g1_tts_bridge` 提供播报程序。`my_g1_audio` 提供命令 `brain_update_sequential`。CycloneDDS 使用仓库里已经生成的 `src/unitree_ros2/cyclonedds_ws/install`，它的 bash 脚本按自身位置定位，克隆到新的家目录后可以继续用。
+`g1_tts_bridge` 提供播报程序。`my_g1_audio` 提供命令 `brain_update_sequential`。`unitree_ros2_example` 提供运动服务 `g1_arm_action_example`，编译后的程序在 `~/unitree_ros2_ws/build/unitree_ros2_example/g1_arm_action_example`。CycloneDDS 使用仓库里已经生成的 `src/unitree_ros2/cyclonedds_ws/install`，它的 bash 脚本按自身位置定位，克隆到新的家目录后可以继续用。
 
 ## 6. 启动
 
@@ -111,7 +113,7 @@ colcon build --packages-select g1_tts_bridge my_g1_audio
 ollama list
 ```
 
-开两个终端，都使用新账户。
+开三个终端，都使用新账户。顺序是耳朵、运动服务、规划。运动服务要先于规划进入等待状态，否则手臂指令发出后没有程序接收。
 
 终端 A，耳朵：
 
@@ -121,7 +123,25 @@ bash ~/unitree_ros2_ws/start_ear.sh
 
 这个脚本会激活 `g1_ear`，编译 `my_g1_audio`，然后运行 `audio_bridge_node.py`。它订阅机器人麦克风组播 `239.168.123.161:5555`，识别完成后向 `/audio_msg` 发布 JSON 文本。
 
-终端 B，规划：
+终端 B，运动服务：
+
+```bash
+source /opt/ros/foxy/setup.bash
+source ~/unitree_ros2_ws/src/unitree_ros2/setup.sh
+source ~/unitree_ros2_ws/install/setup.bash
+cd ~/unitree_ros2_ws/build/unitree_ros2_example
+./g1_arm_action_example
+```
+
+先加载这三份环境再运行。不加载时，程序会因为找不到 `librosidl_typesupport_cpp.so` 而退出。正常时应看到：
+
+```text
+等待从话题 [/g1_arm_action_cmd] 发送的动作 ID...
+```
+
+屏幕上如果随后出现动作反馈超时，可以继续保持这个进程，规划节点仍然会往这个话题发动作编号。这个终端要一直开着。`brain_update_sequential.py` 里的 `execute_arm_action` 只发布一个 `Int32` 动作编号，执行发生在这里。
+
+终端 C，规划：
 
 ```bash
 bash ~/unitree_ros2_ws/start_robot.sh
@@ -136,7 +156,7 @@ bash ~/unitree_ros2_ws/start_robot.sh
 
 规划节点的名字是 `g1_ai_controller`。日志里应出现正在监听 `/audio_msg`。对机器人说话后，规划请求发往 `http://127.0.0.1:11434/api/chat`。
 
-停止终端 B 的规划节点后，脚本会关掉刚才启动的两个检索服务。检索日志写在 `~/g1_rag/rag_server.log` 和 `~/g1_rag/search_server.log`。
+停止终端 C 的规划节点后，脚本会关掉刚才启动的两个检索服务。检索日志写在 `~/g1_rag/rag_server.log` 和 `~/g1_rag/search_server.log`。终端 B 的运动服务不会被这个脚本关掉。
 
 ## 7. 不使用脚本时的等价命令
 
@@ -169,6 +189,4 @@ ros2 run my_g1_audio brain_update_sequential
 
 不要启动 `brain_update_service`。那个入口对应没有逐步等待的旧规划节点。
 
-## 8. 手臂动作
-
-只启动上面两个脚本时，手臂命令会发到 `/g1_arm_action_cmd`。机器人真正执行预设动作，还需要动作示例程序处于等待状态。在已编译的 Unitree ROS 2 示例目录中运行 `g1_arm_action_example`，看到它正在等待该话题上的动作编号即可。
+运动服务的等价命令就是上一节终端 B 的那四行。规划节点发出底盘命令时，会自己调用已经编译好的 `g1_loco_client`，不需要再开一个底盘服务。

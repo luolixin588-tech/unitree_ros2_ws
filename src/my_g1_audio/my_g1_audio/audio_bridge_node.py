@@ -11,9 +11,14 @@ import onnxruntime as ort
 import threading
 import os
 import time
+from collections import deque
 from pathlib import Path
 from ament_index_python.packages import get_package_share_directory
 from faster_whisper import WhisperModel
+try:
+    from opencc import OpenCC
+except Exception:
+    OpenCC = None
 # export G1_MCAST_IFACE_IP=192.168.123.222
 class G1AudioBridge(Node):
     def __init__(self):
@@ -29,10 +34,12 @@ class G1AudioBridge(Node):
         self.vad_frame_samples = 512   # 32ms @ 16kHz
         self.vad_frame_bytes = self.vad_frame_samples * self.sample_width_bytes
 
-        # VAD segment rules
-        self.vad_prob_limit = 0.5
-        self.silence_threshold_frames = 20  # 640ms
+        # VAD segment rules (slightly earlier speech onset + longer pre-roll reduce clipped sentence starts)
+        self.vad_prob_limit = 0.45
+        self.vad_keep_prob_limit = 0.36
+        self.silence_threshold_frames = 20  # 1280ms, tolerate in-sentence pauses
         self.min_speech_frames = 8          # 256ms
+        self.pre_speech_frames = 22         # ~704ms pre-roll before first speech frame
 
         self.stop_event = threading.Event()
 
@@ -62,13 +69,33 @@ class G1AudioBridge(Node):
             raise RuntimeError(f"Failed to load VAD model: {last_vad_error}")
 
         # 3. 初始化 STT 模型 (Faster-Whisper)
-        # device 可选 "cuda" 或 "cpu"
+        # Prefer GPU for speed, fallback to CPU for robustness.
         try:
-            self.stt_model = WhisperModel("base", device="cpu", compute_type="int8")
-            self.get_logger().info("Faster-Whisper model loaded")
+            self.stt_model = WhisperModel("base", device="cuda", compute_type="float16")
+            self.get_logger().info("Faster-Whisper model loaded on CUDA (float16)")
         except Exception as e:
-            self.get_logger().error(f"Failed to load STT model: {e}")
-            raise
+            self.get_logger().warning(
+                f"CUDA STT init failed, fallback to CPU int8: {e}"
+            )
+            try:
+                self.stt_model = WhisperModel("large", device="cpu", compute_type="int8")
+                self.get_logger().info("Faster-Whisper model loaded on CPU (int8)")
+            except Exception as e2:
+                self.get_logger().error(f"Failed to load STT model on both CUDA and CPU: {e2}")
+                raise
+        self.zh_converter = None
+        if OpenCC is not None:
+            try:
+                self.zh_converter = OpenCC("t2s")
+                self.get_logger().info("OpenCC loaded (traditional->simplified)")
+            except Exception as e:
+                self.get_logger().warning(f"OpenCC init failed, skip zh conversion: {e}")
+        else:
+            self.get_logger().warning("OpenCC not installed, skip zh conversion")
+
+        # STT: 仅接受 Whisper 自动检测为中文或英文的结果，避免噪声被强制 zh/en
+        # 解码成乱码，或被模型判成日语等其它语言后仍输出。
+        self.stt_min_language_probability = 0.35
 
         # 4. 配置 UDP 组播接收机器人音频
         self.MCAST_GRP = '239.168.123.161'
@@ -185,32 +212,76 @@ class G1AudioBridge(Node):
             self._h, self._c = h, c
         return float(out[0][0])
 
+    @staticmethod
+    def _whisper_lang_is_zh_or_en(lang_code):
+        if not lang_code:
+            return False
+        if lang_code == "en":
+            return True
+        # Whisper 中文一般为 "zh"
+        return lang_code.startswith("zh")
+
     def stt_recognize(self, audio_bytes):
         """语音转文字"""
         try:
             audio_int16 = np.frombuffer(audio_bytes, dtype=np.int16)
             if audio_int16.size == 0:
-                return ""
+                return "", 0.0, "unknown"
             audio_float32 = audio_int16.astype(np.float32) / 32768.0
-            
-            # 使用 Faster-Whisper 识别
-            segments, _ = self.stt_model.transcribe(
+
+            # 自动检测语言后只保留 zh/en；避免噪声在强制 zh/en 二选一下变成乱码，
+            # 或被判成日语等语言后仍被当作有效指令输出。
+            stt_begin_t = time.monotonic()
+            segments, info = self.stt_model.transcribe(
                 audio_float32,
-                language="zh",
-                vad_filter=False
+                language=None,
+                vad_filter=False,
             )
-            text = "".join([s.text for s in segments])
-            return text
+            segment_list = list(segments)
+            text = "".join(s.text for s in segment_list).strip()
+
+            detected_lang = getattr(info, "language", None) or "unknown"
+            lang_prob = getattr(info, "language_probability", None)
+
+            stt_ms = (time.monotonic() - stt_begin_t) * 1000.0
+
+            if not text:
+                return "", stt_ms, detected_lang
+
+            if not self._whisper_lang_is_zh_or_en(detected_lang):
+                self.get_logger().info(
+                    f"STT dropped non zh/en (lang={detected_lang}, "
+                    f"lang_prob={lang_prob}): {text[:120]!r}"
+                )
+                return "", stt_ms, detected_lang
+
+            if (
+                lang_prob is not None
+                and lang_prob < self.stt_min_language_probability
+            ):
+                self.get_logger().info(
+                    f"STT dropped low language confidence "
+                    f"(lang={detected_lang}, lang_prob={lang_prob})"
+                )
+                return "", stt_ms, detected_lang
+
+            if detected_lang.startswith("zh") and self.zh_converter is not None:
+                text = self.zh_converter.convert(text)
+
+            return text, stt_ms, detected_lang
         except Exception as e:
             self.get_logger().error(f"STT Error: {e}")
-            return ""
+            return "", 0.0, "unknown"
 
     def audio_worker(self):
         """独立线程中的死循环"""
         pending_bytes = bytearray()
         speech_frames = []
+        pre_roll_buffer = deque(maxlen=self.pre_speech_frames)
         is_speaking = False
         silence_count = 0
+        speech_start_t = None
+        last_speech_frame_t = None
 
         while rclpy.ok() and not self.stop_event.is_set():
             try:
@@ -226,12 +297,16 @@ class G1AudioBridge(Node):
 
                     prob = self.process_vad(frame)
 
-                    if prob > self.vad_prob_limit:
+                    speech_prob_limit = self.vad_keep_prob_limit if is_speaking else self.vad_prob_limit
+                    if prob > speech_prob_limit:
                         if not is_speaking:
                             is_speaking = True
-                            speech_frames = []
+                            # Prepend a short pre-roll so early syllables are not clipped.
+                            speech_frames = list(pre_roll_buffer)
+                            speech_start_t = time.monotonic()
                             self.get_logger().info("Voice detected")
                         speech_frames.append(frame)
+                        last_speech_frame_t = time.monotonic()
                         silence_count = 0
                     else:
                         if is_speaking:
@@ -242,15 +317,36 @@ class G1AudioBridge(Node):
                                 is_speaking = False
                                 if len(speech_frames) >= self.min_speech_frames:
                                     full_voice = b"".join(speech_frames)
-                                    self.get_logger().info("Running STT...")
-                                    text = self.stt_recognize(full_voice)
+                                    stt_request_t = time.monotonic()
+                                    endpoint_ms = 0.0
+                                    if last_speech_frame_t is not None:
+                                        endpoint_ms = (stt_request_t - last_speech_frame_t) * 1000.0
+                                    self.get_logger().info(
+                                        f"Running STT... endpoint_ms={endpoint_ms:.1f}"
+                                    )
+                                    text, stt_ms, detected_lang = self.stt_recognize(full_voice)
+                                    # Keep metric name e2e_ms, but define it as post-speech latency:
+                                    # from the last speech frame to text publication readiness.
+                                    e2e_ms = 0.0
+                                    if last_speech_frame_t is not None:
+                                        e2e_ms = (time.monotonic() - last_speech_frame_t) * 1000.0
                                     if text.strip():
-                                        self.get_logger().info(f"Recognized: {text}")
+                                        self.get_logger().info(
+                                            f"Recognized(lang={detected_lang}): {text}"
+                                        )
                                         msg = String()
                                         msg.data = text
                                         self.text_pub.publish(msg)
+                                    self.get_logger().info(
+                                        f"Latency: stt_ms={stt_ms:.1f}, "
+                                        f"endpoint_ms={endpoint_ms:.1f}, e2e_ms={e2e_ms:.1f}"
+                                    )
                                 speech_frames = []
+                                speech_start_t = None
+                                last_speech_frame_t = None
                                 self.reset_vad_state()
+                        else:
+                            pre_roll_buffer.append(frame)
             except socket.timeout:
                 continue
             except OSError as e:

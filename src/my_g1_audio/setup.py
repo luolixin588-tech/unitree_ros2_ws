@@ -14,9 +14,14 @@ setup(
     install_requires=[
         'setuptools',
         'numpy',
-        'onnxruntime',
-        'faster-whisper',
     ],
+    extras_require={
+        'ear': [
+            'onnxruntime',
+            'faster-whisper',
+            'opencc-python-reimplemented',
+        ],
+    },
     zip_safe=True,
     maintainer='luolixin',
     maintainer_email='luolixin@todo.todo',
@@ -28,6 +33,7 @@ setup(
             'brain_service = my_g1_audio.brain:main' ,
             'search_service = my_g1_audio.search_neuroxiv:main',
             'brain_update_service = my_g1_audio.brain_update:main',
+            'brain_update_sequential = my_g1_audio.brain_update_sequential:main',
             'ear_service = my_g1_audio.audio_bridge_node:main',
         ],
     },

@@ -15,6 +15,7 @@ Makefile
 __pycache__/
 *.py[cod]
 *.so
+!third_party/unitree_sdk2/lib/libddscxx.so
 .venv/
 venv/
 

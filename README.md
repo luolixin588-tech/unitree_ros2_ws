@@ -4,7 +4,7 @@
 
 - **耳朵**：`start_ear.sh` 接收机器人麦克风的组播音频，做语音活动检测和语音识别，把文本发到 `/audio_msg`。
 - **运动服务**：`g1_arm_action_example` 订阅 `/g1_arm_action_cmd`。`brain_update_sequential.py` 只往这个话题发布动作编号，真正让机器人做挥手、握手等预设动作的是这个程序。它不在两个启动脚本里，要单独开一个终端，并一直保持运行。
-- **规划**：`start_robot.sh` 先启动两个本机检索服务，再启动 `brain_update_sequential`。该节点订阅 `/audio_msg`，向本机 Ollama 的 `qwen2.5:14b` 要一份有顺序的计划，然后逐步执行。手臂动作之后固定等待 10 秒，底盘移动之后固定等待 5 秒，再执行下一步。底盘移动不经过上面的运动服务，每次由规划节点直接调用 `~/unitree_sdk2/build/bin/g1_loco_client`。
+- **规划**：`start_robot.sh` 先启动两个本机检索服务，再启动 `brain_update_sequential`。该节点订阅 `/audio_msg`，向本机 Ollama 的 `qwen2.5:14b` 要一份有顺序的计划，然后逐步执行。手臂动作之后固定等待 10 秒，底盘移动之后固定等待 5 秒，再执行下一步。底盘移动不经过上面的运动服务，每次由规划节点直接调用本仓库里的 `third_party/unitree_sdk2/bin/g1_loco_client`。
 
 仓库是私有的。另一个 Linux 账户要先能用有权限的 GitHub 账号克隆。
 
@@ -13,15 +13,12 @@
 | 本仓库 | `https://github.com/luolixin588-tech/unitree_ros2_ws` | `~/unitree_ros2_ws` |
 | 检索服务 | `https://github.com/luolixin588-tech/g1_rag` | `~/g1_rag` |
 
-运动客户端来自 Unitree 官方 SDK，不放在这两个仓库里。请单独克隆到 `~/unitree_sdk2`：
+底盘程序已经放在本仓库的 `third_party/unitree_sdk2/`。它是 Unitree SDK 编好的 `g1_loco_client`，以及它要加载的 `libddscxx.so`。许可是 BSD 3-Clause，原文在 `third_party/unitree_sdk2/LICENSE`。不需要再克隆或编译 `unitree_sdk2`。
 
-`https://github.com/unitreerobotics/unitree_sdk2`
-
-家目录下必须保持这个相对位置，代码按它查找语音程序和运动程序：
+家目录下保持这个相对位置：
 
 ```text
 ~/unitree_ros2_ws
-~/unitree_sdk2
 ~/g1_rag
 ~/miniconda3
 ```
@@ -32,7 +29,6 @@
 
 - Ubuntu 20.04
 - ROS 2 Foxy：`/opt/ros/foxy`
-- 编译 Unitree SDK 所需的 CMake、g++、Eigen、Boost、yaml-cpp、spdlog、fmt
 - Ollama 服务，并且已经拉取模型 `qwen2.5:14b`
 
 新账户自己需要：
@@ -51,7 +47,6 @@
 cd ~
 git clone https://github.com/luolixin588-tech/unitree_ros2_ws.git
 git clone https://github.com/luolixin588-tech/g1_rag.git
-git clone https://github.com/unitreerobotics/unitree_sdk2.git
 ```
 
 ## 3. 准备耳朵环境
@@ -83,18 +78,9 @@ python3 -m venv ~/g1_rag/venv
 
 ## 5. 编译
 
-运动客户端：
+底盘客户端不用编译，克隆后就是 `third_party/unitree_sdk2/bin/g1_loco_client`。
 
-```bash
-cd ~/unitree_sdk2
-mkdir -p build && cd build
-cmake ..
-make -j
-```
-
-完成后应存在 `~/unitree_sdk2/build/bin/g1_loco_client`。
-
-语音桥和规划节点：
+语音桥、规划节点和手臂运动服务：
 
 ```bash
 source /opt/ros/foxy/setup.bash
@@ -189,4 +175,4 @@ ros2 run my_g1_audio brain_update_sequential
 
 不要启动 `brain_update_service`。那个入口对应没有逐步等待的旧规划节点。
 
-运动服务的等价命令就是上一节终端 B 的那四行。规划节点发出底盘命令时，会自己调用已经编译好的 `g1_loco_client`，不需要再开一个底盘服务。
+运动服务的等价命令就是上一节终端 B 的那四行。规划节点发出底盘命令时，会自己调用仓库里的 `g1_loco_client`，不需要再开一个底盘服务。

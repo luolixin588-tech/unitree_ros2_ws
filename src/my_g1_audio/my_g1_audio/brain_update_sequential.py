@@ -1469,10 +1469,16 @@ class G1AIController(Node):
         """
         # 1. 基础配置
         exe_path = _resolve_relative(
+            ("..", "..", "..", "..", "..", "..", "third_party", "unitree_sdk2", "bin", "g1_loco_client"),
+            ("..", "..", "..", "third_party", "unitree_sdk2", "bin", "g1_loco_client"),
             ("..", "..", "..", "..", "..", "..", "..", "unitree_sdk2", "build", "bin", "g1_loco_client"),
             ("..", "..", "..", "..", "unitree_sdk2", "build", "bin", "g1_loco_client"),
         )
-        interface = "eno1" 
+        interface = "eno1"
+        lib_dir = os.path.normpath(os.path.join(os.path.dirname(exe_path), "..", "lib"))
+        run_env = os.environ.copy()
+        if os.path.isdir(lib_dir):
+            run_env["LD_LIBRARY_PATH"] = lib_dir + os.pathsep + run_env.get("LD_LIBRARY_PATH", "") 
     
         # 2. 构造命令列表
         # 基础命令: [可执行文件路径, 网卡参数]
@@ -1495,10 +1501,11 @@ class G1AIController(Node):
             # 使用 run 会阻塞直到动作完成
             # 设置 timeout 防止底层 SDK 挂死导致整个 ROS 节点卡住
             result = subprocess.run(
-                cmd, 
-                capture_output=True, 
-                text=True, 
-                timeout=30.0  # 建议比你最大的 duration 稍微长一点
+                cmd,
+                capture_output=True,
+                text=True,
+                timeout=30.0,  # 建议比你最大的 duration 稍微长一点
+                env=run_env,
             )
         
             if result.returncode == 0:

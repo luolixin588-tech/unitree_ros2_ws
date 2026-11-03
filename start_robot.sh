@@ -1,13 +1,18 @@
 #!/bin/bash
-echo "Starting lab RAG server (port 5000)"
-cd ~/g1_rag
-source venv/bin/activate
-python rag_server.py > rag_server.log 2>&1 &
-RAG_PID=$!
-echo "Starting neuroscience search server (port 5001)"
-
-python search_server.py > search_server.log 2>&1 &
-SEARCH_PID=$!
+RAG_PID=
+SEARCH_PID=
+if [[ -f "$HOME/g1_rag/rag_server.py" && -f "$HOME/g1_rag/venv/bin/activate" ]]; then
+  echo "Starting lab RAG server (port 5000)"
+  cd "$HOME/g1_rag"
+  source venv/bin/activate
+  python rag_server.py > rag_server.log 2>&1 &
+  RAG_PID=$!
+  echo "Starting neuroscience search server (port 5001)"
+  python search_server.py > search_server.log 2>&1 &
+  SEARCH_PID=$!
+else
+  echo "Retrieval services not present, continuing without them"
+fi
 
 echo "Configuring the ROS 2 environment..."
 source /opt/ros/foxy/setup.bash
@@ -18,7 +23,9 @@ source ~/unitree_ros2_ws/install/setup.bash
 
 ros2 run my_g1_audio brain_update_sequential
 #ros2 run my_g1_audio search_service
-kill $RAG_PID $SEARCH_PID
+if [[ -n "$RAG_PID" || -n "$SEARCH_PID" ]]; then
+  kill $RAG_PID $SEARCH_PID
+fi
 
 
 #ros2 topic pub --once /audio_msg std_msgs/msg/String "data: '{\"text\": \"复旦大学脑智研究院的地址在哪\", \"is_final\": true}'"

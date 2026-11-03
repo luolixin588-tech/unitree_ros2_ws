@@ -6,7 +6,7 @@
 - **运动服务**：`g1_arm_action_example` 订阅 `/g1_arm_action_cmd`。`brain_update_sequential.py` 只往这个话题发布动作编号，真正让机器人做挥手、握手等预设动作的是这个程序。它不在两个启动脚本里，要单独开一个终端，并一直保持运行。
 - **规划**：`start_robot.sh` 启动 `brain_update_sequential`。该节点订阅 `/g1/voice_text`，向本机 Ollama 的 `qwen2.5:14b` 要一份有顺序的计划，然后逐步执行。手臂动作之后固定等待 10 秒，底盘移动之后固定等待 5 秒，再执行下一步。底盘移动不经过上面的运动服务，每次由规划节点直接调用本仓库里的 `third_party/unitree_sdk2/bin/g1_loco_client`。实验室问答和神经科学检索不参与启动；这两个服务没开时，说话、手臂和底盘仍可执行。
 
-仓库是私有的。另一个 Linux 账户要先能用有权限的 GitHub 账号克隆。
+仓库是公开的，克隆不需要 GitHub 账号。
 
 | 仓库 | 地址 | 克隆到 |
 |---|---|---|
@@ -46,6 +46,20 @@ git clone https://github.com/luolixin588-tech/unitree_ros2_ws.git
 ```
 
 ## 3. 准备耳朵环境
+
+每个账户把 Miniconda 装在自己的家目录。`start_ear.sh` 读取的是 `$HOME/miniconda3`，不能使用别人家里的那一份。当前账户已经有这个目录时，跳过安装，从创建 `g1_ear` 开始。
+
+```bash
+cd ~
+curl -fsSL -o Miniconda3-latest-Linux-x86_64.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh -b -p "$HOME/miniconda3"
+source "$HOME/miniconda3/etc/profile.d/conda.sh"
+conda --version
+```
+
+`-b` 表示不进入交互安装，`-p` 把安装位置固定为 `~/miniconda3`。安装完成后可以删掉下载的 `.sh`。脚本会自己加载 `conda.sh`，不必再执行 `conda init`。
+
+然后创建耳朵环境：
 
 ```bash
 source ~/miniconda3/etc/profile.d/conda.sh

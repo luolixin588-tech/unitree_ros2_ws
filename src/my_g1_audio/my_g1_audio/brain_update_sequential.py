@@ -38,6 +38,8 @@ def _resolve_relative(*candidates):
 
 
 TTS_CLI_PATH = _resolve_relative(
+    ("..", "..", "..", "..", "..", "..", "third_party", "prebuilt", "bin", "g1_tts_cli"),
+    ("..", "..", "..", "third_party", "prebuilt", "bin", "g1_tts_cli"),
     ("..", "..", "..", "..", "..", "g1_tts_bridge", "lib", "g1_tts_bridge", "g1_tts_cli"),
     ("..", "..", "..", "install", "g1_tts_bridge", "lib", "g1_tts_bridge", "g1_tts_cli"),
 )

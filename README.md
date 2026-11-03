@@ -76,20 +76,28 @@ python3 -m venv ~/g1_rag/venv
 
 神经科学检索还会访问实验室内网 `http://10.133.59.101:5454/answer`。不在该网络时，这一项检索会失败，实验室问答和机器人动作规划仍然可以启动。两个服务都使用本机 Ollama 做向量和回答。
 
-## 5. 编译
+## 5. 已编译的程序
 
-底盘客户端不用编译，克隆后就是 `third_party/unitree_sdk2/bin/g1_loco_client`。
+底盘、语音和手臂运动服务都使用仓库里已经编译好的程序，不要再编译：
 
-语音桥、规划节点和手臂运动服务：
+| 程序 | 路径 |
+|---|---|
+| 底盘 | `third_party/unitree_sdk2/bin/g1_loco_client` |
+| 语音 | `third_party/prebuilt/bin/g1_tts_cli` |
+| 手臂运动服务 | `third_party/prebuilt/bin/g1_arm_action_example` |
+
+这些程序依赖本机的 `/opt/ros/foxy`。同一台电脑上的另一个账户可以直接运行。
+
+规划节点是 Python。要让 `ros2 run my_g1_audio brain_update_sequential` 找到入口，做一次安装即可，这一步不编译 C++：
 
 ```bash
 source /opt/ros/foxy/setup.bash
 source ~/unitree_ros2_ws/src/unitree_ros2/setup.sh
 cd ~/unitree_ros2_ws
-colcon build --packages-select g1_tts_bridge my_g1_audio unitree_ros2_example
+colcon build --packages-select my_g1_audio
 ```
 
-`g1_tts_bridge` 提供播报程序。`my_g1_audio` 提供命令 `brain_update_sequential`。`unitree_ros2_example` 提供运动服务 `g1_arm_action_example`，编译后的程序在 `~/unitree_ros2_ws/build/unitree_ros2_example/g1_arm_action_example`。CycloneDDS 使用仓库里已经生成的 `src/unitree_ros2/cyclonedds_ws/install`，它的 bash 脚本按自身位置定位，克隆到新的家目录后可以继续用。
+CycloneDDS 使用仓库里已经生成的 `src/unitree_ros2/cyclonedds_ws/install`，它的 bash 脚本按自身位置定位，克隆到新的家目录后可以继续用。
 
 ## 6. 启动
 
@@ -115,8 +123,7 @@ bash ~/unitree_ros2_ws/start_ear.sh
 source /opt/ros/foxy/setup.bash
 source ~/unitree_ros2_ws/src/unitree_ros2/setup.sh
 source ~/unitree_ros2_ws/install/setup.bash
-cd ~/unitree_ros2_ws/build/unitree_ros2_example
-./g1_arm_action_example
+~/unitree_ros2_ws/third_party/prebuilt/bin/g1_arm_action_example
 ```
 
 先加载这三份环境再运行。不加载时，程序会因为找不到 `librosidl_typesupport_cpp.so` 而退出。正常时应看到：

@@ -16,6 +16,7 @@ __pycache__/
 *.py[cod]
 *.so
 !third_party/unitree_sdk2/lib/libddscxx.so
+!third_party/prebuilt/lib/libunitree_api__rosidl_typesupport_cpp.so
 .venv/
 venv/
 
